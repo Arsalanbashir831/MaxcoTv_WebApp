@@ -320,7 +320,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                                     <CssBaseline />
                                     <Accordion expanded={expanded === id} onChange={handleChange(id)}>
                                         <AccordionSummary 
-                                            expandIcon={<ExpandMoreIcon />}
+                                            expandIcon={!darkMode?<ExpandMoreIcon />:<ExpandMoreIcon style={{color:"white"}}></ExpandMoreIcon>}
                                             aria-controls="panel1a-content"
                                             id="panel1a-header"
                                         >
