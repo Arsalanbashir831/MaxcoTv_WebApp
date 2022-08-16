@@ -1,0 +1,54 @@
+@media only screen and (max-width:1080px) {
+
+    .blink,
+    .instruction {
+        opacity: 0;
+        display: hidden;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width:980px) {
+
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:768px){
+    .setupBtn{
+        width: 90vw;
+        margin-left:-20px ;
+    }
+    .price_div{
+        grid-template-columns: auto auto;
+    }
+    .iconBtn{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+   
+    .whiteCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:1023px){
+    /* .price_div{
+        display: none;
+    }
+    .price_div_col{
+        grid-template-columns: auto auto;
+    } */
+}
+
