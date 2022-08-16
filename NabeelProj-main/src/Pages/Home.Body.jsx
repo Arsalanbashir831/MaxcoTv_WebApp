@@ -34,7 +34,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
 
 
     const [expanded, setExpanded] = React.useState(false);
-   
+
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
@@ -44,19 +44,19 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
         palette: {
             type: 'dark',
             primary: {
-              main: '#3f51b5',
+                main: '#3f51b5',
             },
             secondary: {
-              main: '#f50057',
+                main: '#f50057',
             },
             background: {
-              paper: '#040e2e',
+                paper: '#040e2e',
             },
             text: {
                 primary: '#ffffff',
             },
 
-          },
+        },
 
     });
 
@@ -319,7 +319,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                                 <ThemeProvider theme={darkTheme}>
                                     <CssBaseline />
                                     <Accordion expanded={expanded === id} onChange={handleChange(id)}>
-                                        <AccordionSummary
+                                        <AccordionSummary 
                                             expandIcon={<ExpandMoreIcon />}
                                             aria-controls="panel1a-content"
                                             id="panel1a-header"
