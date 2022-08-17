@@ -9,10 +9,19 @@
 
     
 }
+
 body{
     background: url('./assets/background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 }
-
+.darkbg{
+    background: url('./assets/dark.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
 html {
     overflow-x: hidden;
 }
