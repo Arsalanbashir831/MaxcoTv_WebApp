@@ -229,7 +229,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             {/* Heading and subheading beneath five stars on web page */}
             <div className='flex items-center justify-center'>
                 <div className='flex items-center flex-col justify-center'>
-                    <h1 className='text-white font-bold text-4xl'>A Five Star IPTV Experience</h1>
+                    <h1 className='text-white font-bold text-4xl text-center'>A Five Star IPTV Experience</h1>
                     <p className='md:w-[600px] my-8 text-white font-bold text-normal text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, rerum ad? Eveniet, saepe doloremque incidunt totam corrupti neque rem possimus
                     </p>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-// import Logo from '../assets/Logo.svg'
-import Logo from '../assets/example.png'
+import Logo from '../assets/Logo.svg'
+// import Logo from '../assets/example.png'
 // import Logo from '../assets/example.png'
 import { TbGridDots } from 'react-icons/tb'
 import moon from '../assets/moon.svg'

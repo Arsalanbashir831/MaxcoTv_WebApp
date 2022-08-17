@@ -43,7 +43,7 @@
         align-items: center;
     }
     .priceBox{
-        min-width: 5rem;
+        min-width: 10rem;
     }
     .service_text{
         text-align: center;
@@ -68,6 +68,10 @@
         text-align: left;
         justify-content: center;
         align-items: center;
+    }.timeTagText{
+        font-size: 1rem;
+    }.subscribe_text{
+        font-size: 1rem;
     }
 }
 
@@ -79,6 +83,9 @@
    .service_div{
     width: 100%;
    }
+  .price_main_div{
+    width: 100%;
+  }
 }
 @media only screen and (max-width:280px){
   .main-text{

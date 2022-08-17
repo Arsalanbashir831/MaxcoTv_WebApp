@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { AiOutlineSearch } from 'react-icons/ai'
 import MediaQuery from 'react-responsive'
 import { Select, FormControl, InputLabel, MenuItem } from '@mui/material';
@@ -206,9 +207,12 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
 
     }, [search, current]);
+    let Category1Text="Category1";
+    let Category2Text="Category2";
+    let Category3Text="Category3";
     return (
         <div className='md:w-screen lg:w-auto  my-20 '>
-            <h1 className='text-center font-bold text-6xl text-white'>Our Full IPTV Channels List</h1>
+            <h1 className='text-center font-bold md:text-6xl text-5xl text-white'>Our Full IPTV Channels List</h1>
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
             <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:max-w-[1400px] mx-auto'>
                 {/* left menu */}
@@ -218,9 +222,11 @@ const Channel = ({ darkMode, setDarkMode }) => {
                         <div onClick={(e) => { setCurrent('Category1'); }}
                             className={` ${current == 'Category1' ? Activebtn : notActiveBtn} h-[7%]`}>
 
-                            <button className='flex items-center justify-between w-full p-1 overflow-hidden '>
-                                <h1 className='font-bold text-md'>Category1</h1>
-                                {current == 'Category1' ? <AiOutlineArrowRight /> : ""}
+                            <button className='flex items-center justify-between w-full p-1 overflow-hidden  '>
+                          
+                            <h1 className='font-bold text-md  '>{ Category1Text.slice(0,20) }</h1>
+                       
+                                {current == 'Category1' ? <KeyboardArrowRightIcon /> : ""}
 
                             </button>
                         </div>
@@ -232,8 +238,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
                         }}
                             className={` ${current == 'Category2' ? Activebtn : notActiveBtn} h-[7%]`}>
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
-                                <h1 className='font-bold text-md'>Category2</h1>
-                                {current == 'Category2' ? <AiOutlineArrowRight /> : ""}
+                                <h1 className='font-bold text-md'>{ Category2Text.slice(0,20) }</h1>
+                                {current == 'Category2' ? <KeyboardArrowRightIcon /> : ""}
                             </button>
                         </div>
 
@@ -243,8 +249,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
                         }}
                             className={` ${current == 'Category3' ? Activebtn : notActiveBtn} h-[7%]`}>
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
-                                <h1 className='font-bold text-md'>Category3</h1>
-                                {current == 'Category3' ? <AiOutlineArrowRight /> : ""}
+                                <h1 className='font-bold text-md'>{ Category3Text.slice(0,20) }</h1>
+                                {current == 'Category3' ? <KeyboardArrowRightIcon /> : ""}
                             </button>
                         </div>
 
