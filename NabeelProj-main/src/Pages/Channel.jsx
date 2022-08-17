@@ -137,13 +137,24 @@ const Channel = ({ darkMode, setDarkMode }) => {
     useEffect(() => {
 
         console.log(darkMode)
+        if (search == '') {
+            if (current == 'Category1') {
+                let temp = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
+                setfilteredArray(Category1);
 
-        let temp1 = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
-        let temp2 = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
+            }
+            if (current == 'Category2') {
+                setfilteredArray(null)
+                let temp = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
+                setfilteredArray(Category2);
 
-        const temp3 = temp1.concat(temp2)
-        setfilteredArray(temp3);
-
+            }
+        }
+        else {
+            let temp1 = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
+            let temp2 = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
+            setfilteredArray(temp1.concat(temp2))
+        }
 
 
     }, [search, current]);
