@@ -22,8 +22,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
     const notActiveBtn = 'transition-all duration-300 ease-in-out dark:hover:bg-[#1e253b] hover:bg-[#cbcdd0]  dark:hover:text-white md:w-full w-full dark:text-white text-black  rounded-md dark:bg-[#262F4A] bg-[#E2E4E8] shadow-sm flex flex-col items-center justify-center gap-4'
     const Activebtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-full w-full  rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-blue-darkmdbg text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4'
-   const [current, setCurrent] = useState('Category1'); 
-  
+    const [current, setCurrent] = useState('Category1');
+
     const [search, setSearch] = useState('')
     const [filteredArray, setfilteredArray] = useState(null)
 
@@ -137,18 +137,26 @@ const Channel = ({ darkMode, setDarkMode }) => {
     useEffect(() => {
 
         console.log(darkMode)
-        if (current == 'Category1') {
-            let temp = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
-            setfilteredArray(temp);
-           
+        if (search == '') {
+            if (current == 'Category1') {
+                let temp = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
+                setfilteredArray(Category1);
+
+            }
+            if (current == 'Category2') {
+                setfilteredArray(null)
+                let temp = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
+                setfilteredArray(Category2);
+
+            }
         }
-        if (current == 'Category2') {
-            setfilteredArray(null)
-            let temp = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
-            setfilteredArray(temp);
-           
+        else {
+            let temp1 = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
+            let temp2 = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
+            setfilteredArray(temp1.concat(temp2))
         }
-        
+
+
     }, [search, current]);
     return (
         <div className='md:w-screen lg:w-auto  my-20 '>
@@ -164,8 +172,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden '>
                                 <h1 className='font-bold text-md'>Category1</h1>
-                                { current == 'Category1'?  <AiOutlineArrowRight />:""}
-                             
+                                {current == 'Category1' ? <AiOutlineArrowRight /> : ""}
+
                             </button>
                         </div>
 
@@ -177,7 +185,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                             className={` ${current == 'Category2' ? Activebtn : notActiveBtn} h-[7%]`}>
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
                                 <h1 className='font-bold text-md'>Category2</h1>
-                                { current == 'Category2'?  <AiOutlineArrowRight />:""}
+                                {current == 'Category2' ? <AiOutlineArrowRight /> : ""}
                             </button>
                         </div>
 
@@ -188,48 +196,48 @@ const Channel = ({ darkMode, setDarkMode }) => {
                 {/* The combo box */}
                 <MediaQuery minWidth={0} maxWidth={768}>
 
-            {darkMode?  
+                    {darkMode ?
 
-<div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
-                <ThemeProvider theme={darkTheme}>
-                    <CssBaseline />
-                    <FormControl className='mt-24  w-full md:w-[90%]  lg:max-w-[1100px] '>
-                        <InputLabel id="demo-simple-select-label">Screen</InputLabel>
-                        <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={muiSelectValue}
-                            label="Screen"
-                            onChange={handleChange}
-                        >
-                            <MenuItem value={'Category1'}>Category1</MenuItem>
-                            <MenuItem value={'Category2'}>Category2</MenuItem>
-                        </Select>
-                    </FormControl>
-                </ThemeProvider>
-                </div>
-           :
-            
-           <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
-            <ThemeProvider theme={lightTheme}>
-                    <CssBaseline />
-                    <FormControl className='mt-24  w-full md:w-[90%]  lg:max-w-[1100px] '>
-                        <InputLabel id="demo-simple-select-label">Screen</InputLabel>
-                        <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={muiSelectValue}
-                            label="Screen"
-                            onChange={handleChange}
-                        >
-                            <MenuItem value={'Category1'}>Category1</MenuItem>
-                            <MenuItem value={'Category2'}>Category2</MenuItem>
-                        </Select>
-                    </FormControl>
-                </ThemeProvider>
-                </div>
-            }
-              </MediaQuery>
+                        <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
+                            <ThemeProvider theme={darkTheme}>
+                                <CssBaseline />
+                                <FormControl className='mt-24  w-full md:w-[90%]  lg:max-w-[1100px] '>
+                                    <InputLabel id="demo-simple-select-label">Screen</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={muiSelectValue}
+                                        label="Screen"
+                                        onChange={handleChange}
+                                    >
+                                        <MenuItem value={'Category1'}>Category1</MenuItem>
+                                        <MenuItem value={'Category2'}>Category2</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </ThemeProvider>
+                        </div>
+                        :
+
+                        <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
+                            <ThemeProvider theme={lightTheme}>
+                                <CssBaseline />
+                                <FormControl className='mt-24  w-full md:w-[90%]  lg:max-w-[1100px] '>
+                                    <InputLabel id="demo-simple-select-label">Screen</InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={muiSelectValue}
+                                        label="Screen"
+                                        onChange={handleChange}
+                                    >
+                                        <MenuItem value={'Category1'}>Category1</MenuItem>
+                                        <MenuItem value={'Category2'}>Category2</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </ThemeProvider>
+                        </div>
+                    }
+                </MediaQuery>
 
                 <div className='md:w-[50%] lg:max-w-[800px] w-[90%] p-6  rounded-md shadow-md h-[600px] overflow-hidden flex flex-col gap-8 items-start justify-start  dark:bg-blue-darkmd bg-[#FFFFFF] '>
                     <div className='w-full  relative top-2'>
@@ -242,12 +250,12 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
                             filteredArray && filteredArray.map((animal, index) => {
 
-                                return(<>
-                               <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden' >
-                                <h1 key={index} className="w-[100vw]" >{animal.toUpperCase()}</h1>
-                               </div>
-                                </>) 
-                                    
+                                return (<>
+                                    <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden' >
+                                        <h1 key={index} className="w-[100vw]" >{animal.toUpperCase()}</h1>
+                                    </div>
+                                </>)
+
                             })
                         }
                     </div>
