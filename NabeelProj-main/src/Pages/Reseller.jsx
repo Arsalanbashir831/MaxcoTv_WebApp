@@ -108,36 +108,38 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                     <p className='dark:text-white text-blue-lightmd font-light md:px-32 px-4 text-justify '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim praesentium velit nam dicta ullam. Vitae dignissimos delectus illum sint laboriosam totam! Delectus, exercitationem assumenda voluptas culpa ut aperiam nobis?</p>
                 </div>
                 {/* desktop view manage  */}
+ {/* #00b40efc green
+ #ffd000fc orange */}
                 <div className='sm:w-[100%]  gap-6 md:my-8 grid lg:grid-cols-4 md:grid-cols-2 price_div'>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
-                        <PriceTag price='100' type="Top-Up Amount" unit="$" />
+                        <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
                         <ArrowDropDownIcon></ArrowDropDownIcon>
-                        <PriceTag price='100' type="Credits" unit=" " />
+                        <PriceTag price='20' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
-                    <div className=' lg:block text-center md:flex justify-center items-center md:flex-col'>
-                        <PriceTag price='100' type="Top-Up Amount" unit="$" />
+                    <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
+                        <PriceTag price='300' type="Top-Up Amount" unit="£" color="#00b40efc "  />
                         <ArrowDropDownIcon></ArrowDropDownIcon>
-                        <PriceTag price='100' type="Credits" unit=" " />
+                        <PriceTag price='100' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
-                    <div className=' lg:block text-center md:flex justify-center items-center md:flex-col'>
-                        <PriceTag price='100' type="Top-Up Amount" unit="$" />
+                    <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
+                        <PriceTag price='500' type="Top-Up Amount" unit="£" color="#00b40efc "  />
                         <ArrowDropDownIcon></ArrowDropDownIcon>
-                        <PriceTag price='100' type="Credits" unit=" " />
+                        <PriceTag price='300' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
-                    <div className=' lg:block text-center md:flex justify-center items-center md:flex-col'>
-                        <PriceTag price='100' type="Top-Up Amount" unit="$" />
+                    <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
+                        <PriceTag price='1000' type="Top-Up Amount" unit="£" color="#00b40efc "  />
                         <ArrowDropDownIcon></ArrowDropDownIcon>
-                        <PriceTag price='100' type="Credits" unit=" " />
+                        <PriceTag price='700' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
 
                 </div>
 
                 <h1 className='dark:text-white text-blue-lightmd text-4xl font-bold'>Package Cost for Resellers</h1>
                 <div className='grid lg:grid-cols-4 grid-cols-2 gap-4 sm:w-[100%] md:max-w-[900px]'>
-                    <TimeTag />
-                    <TimeTag />
-                    <TimeTag />
-                    <TimeTag />
+                    <TimeTag month='1' credit='5' type="Month" />
+                    <TimeTag month="3" credit='10' type="Month" />
+                    <TimeTag month='6' credit ='15' type="Month" />
+                    <TimeTag month='1' credit='20' type="Year"/>
                 </div>
                 <div className='flex items-center sm:w-[100%] md:max-w-[500px] justify-center flex-col bg-green-400 p-4 rounded-md shadow-sm'>
                     <button type='button'>

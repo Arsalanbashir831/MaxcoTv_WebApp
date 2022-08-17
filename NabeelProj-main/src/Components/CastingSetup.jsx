@@ -7,7 +7,7 @@ const CastingSetup = () => {
         <div className='flex items-start justify-between   flex-col max-w-full '>
             <h1 className='text-2xl font-semibold'>Cast Your IPTV with Any  TV Screen</h1>
             <p className='my-4'>Explore TV in all your Devices</p>
-            <div className='flex items-between justify-start gap-24 my-6'>
+            <div className='flex items-between justify-start gap-[22rem] my-6'>
                 <div className='flex flex-col items-center justify-center gap-2'>
                     <h1 className='my-4 text-2xl font-semibold'>Google ChromCast</h1>
                     <img src={ChromeCastImage} alt="" />
