@@ -9,6 +9,9 @@
 
     
 }
+body{
+    background: url('./assets/background.webp');
+}
 
 html {
     overflow-x: hidden;
