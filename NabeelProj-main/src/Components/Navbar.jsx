@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import Logo from '../assets/Logo.svg'
+// import Logo from '../assets/Logo.svg'
+import Logo from '../assets/example.png'
+// import Logo from '../assets/example.png'
 import { TbGridDots } from 'react-icons/tb'
 import moon from '../assets/moon.svg'
 import sun from '../assets/sun.svg'
@@ -24,7 +26,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className='w-[80%] flex items-center justify-between'>
                 <div className='flex justify-center items-center'>
                     <Link to='/'>
-                        <img src={Logo} alt="Logo-image" />
+                    {/* className='max-h-[50px] max-w-[80px]'  */}
+                        <img  src={Logo} alt="Logo-image" />
                     </Link>
 
                 </div>
