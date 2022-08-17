@@ -28,6 +28,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { display, style } from '@mui/system'
+import ListAltIcon from '@mui/icons-material/ListAlt';
+import CustomCard3 from '../Components/CustomCard3'
 
 
 const HomeBody = ({ darkMode, setDarkMode }) => {
@@ -210,9 +212,10 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             </div>
             {/* Three cards on a column with image with flex */}
             <div className='my-20 w-[90vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
-                <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={CustomCard1Para} buttonHeading="Discover Channel List" image={mainimage4} />
-                <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={CustomCard1Para} buttonHeading="Discover Channel List" image={mainimage3} />
-                <CustomCard1 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={CustomCard1Para} buttonHeading="join Us Now" image={mainimage2} />
+                <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={CustomCard1Para} buttonHeading="Discover the Channel List" image={mainimage4} icon={ <ListAltIcon></ListAltIcon>} />
+                <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={CustomCard1Para} buttonHeading="Discover the Channel List" image={mainimage3} />
+                <CustomCard3 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={CustomCard1Para}  image={mainimage2}  />
+            
             </div>
             {/* Five stars */}
             <div className='my-8 flex items-center justify-center gap-4'>
@@ -288,7 +291,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
 
             </div>
-            <div className='w-[40vw] lg:w-[500px] mt-8  p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
+            <div className='w-[40vw] lg:w-[500px]  mt-8  p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
                 <div className='flex items-center justify-center flex-col'>
                     <button type='button' className='w-'>
                         <h1 className='text-white text-3xl font-bold'>Get My Instant Access Now</h1>
@@ -296,7 +299,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
             </div>
             <p className='text-white font-medium text-center my-2'>30 Day Money Back Guarantee</p>
-            <div className='mx-auto my-28 w-[80vw] lg:w-[940px] flex items-center justify-center'>
+            <div className='mx-auto my-28 w-[80vw]  lg:w-[940px] flex items-center justify-center guranteeCard'>
                 <Guarantee darkMode={darkMode} />
             </div>
             <h1 className='text-white my-30 text-5xl font-semibold mx-auto text-center'>FAQ</h1>

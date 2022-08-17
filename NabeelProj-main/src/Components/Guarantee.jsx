@@ -4,7 +4,7 @@ import GuranteeLogoDark from '../assets/GuranteeLogoDark.svg'
 
 const Guarantee = ({ darkMode }) => {
     return (
-        <div className='dark:bg-blue-darkmd flex-wrap p-10 bg-white w-[70vw] rounded-md shadow-md flex items-center justify-between md:gap-0 gap-8 '>
+        <div className='dark:bg-blue-darkmd flex-wrap p-10 bg-white w-[70vw] rounded-md shadow-md flex items-center justify-between md:gap-0 gap-8 guranteeCard'>
             <div className=''>
                 {
                     darkMode ? (<img src={GuranteeLogoDark} />) :
