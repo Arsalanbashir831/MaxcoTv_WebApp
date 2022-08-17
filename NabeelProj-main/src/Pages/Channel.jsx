@@ -22,18 +22,19 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
     const notActiveBtn = 'transition-all duration-300 ease-in-out dark:hover:bg-[#1e253b] hover:bg-[#cbcdd0]  dark:hover:text-white md:w-full w-full dark:text-white text-black  rounded-md dark:bg-[#262F4A] bg-[#E2E4E8] shadow-sm flex flex-col items-center justify-center gap-4'
     const Activebtn = 'transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-full w-full  rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-blue-darkmdbg text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4'
-    const [current, setCurrent] = useState('Animals');
+   const [current, setCurrent] = useState('Category1'); 
+  
     const [search, setSearch] = useState('')
     const [filteredArray, setfilteredArray] = useState(null)
 
-    const [muiSelectValue, setMuiSelectValue] = React.useState('Animals');
+    const [muiSelectValue, setMuiSelectValue] = React.useState('Category1');
     const handleChange = (e) => {
         setMuiSelectValue(e.target.value)
         setCurrent(e.target.value)
     }
 
 
-    const Animals = [
+    const Category1 = [
         "Aardvarksdfdsfdsfdsfs",
         "Albatross",
         "Alligatorsdfdsfdsfdsfds",
@@ -73,7 +74,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
         "Cockroach",
         "Cod",
         "Cormorant"]
-    const Plants = [
+    const Category2 = [
         "Tunisian Restaurant",
         "Hypnotherapy Service",
         "Armenian Restaurant",
@@ -136,16 +137,18 @@ const Channel = ({ darkMode, setDarkMode }) => {
     useEffect(() => {
 
         console.log(darkMode)
-        if (current == 'Animals') {
-            let temp = Animals.filter((animal) => (animal.toLowerCase().includes(search.toLowerCase())));
+        if (current == 'Category1') {
+            let temp = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
             setfilteredArray(temp);
+           
         }
-        if (current == 'Plants') {
-
+        if (current == 'Category2') {
             setfilteredArray(null)
-            let temp = Plants.filter((plant) => (plant.toLowerCase().includes(search.toLowerCase())));
+            let temp = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
             setfilteredArray(temp);
+           
         }
+        
     }, [search, current]);
     return (
         <div className='md:w-screen lg:w-auto  my-20 '>
@@ -153,28 +156,28 @@ const Channel = ({ darkMode, setDarkMode }) => {
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
             <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:max-w-[1400px] mx-auto'>
                 {/* left menu */}
-
                 <MediaQuery minWidth={768}>
                     <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                         {/* /button 1 */}
-                        <div onClick={(e) => { setCurrent('Animals'); }}
-                            className={` ${current == 'Animals' ? Activebtn : notActiveBtn} `}>
+                        <div onClick={(e) => { setCurrent('Category1'); }}
+                            className={` ${current == 'Category1' ? Activebtn : notActiveBtn} h-[7%]`}>
 
-                            <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
-                                <h1 className='font-bold text-md'>ANIMALS</h1>
-                                <AiOutlineArrowRight />
+                            <button className='flex items-center justify-between w-full p-1 overflow-hidden '>
+                                <h1 className='font-bold text-md'>Category1</h1>
+                                { current == 'Category1'?  <AiOutlineArrowRight />:""}
+                             
                             </button>
                         </div>
 
                         {/* /button 2 */}
                         <div onClick={(e) => {
-                            setCurrent('Plants');
+                            setCurrent('Category2');
 
                         }}
-                            className={` ${current == 'Plants' ? Activebtn : notActiveBtn}`}>
+                            className={` ${current == 'Category2' ? Activebtn : notActiveBtn} h-[7%]`}>
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
-                                <h1 className='font-bold text-md'>PLANTS</h1>
-                                <AiOutlineArrowRight />
+                                <h1 className='font-bold text-md'>Category2</h1>
+                                { current == 'Category2'?  <AiOutlineArrowRight />:""}
                             </button>
                         </div>
 
@@ -199,8 +202,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
                             label="Screen"
                             onChange={handleChange}
                         >
-                            <MenuItem value={'Animals'}>Animals</MenuItem>
-                            <MenuItem value={'Plants'}>Plants</MenuItem>
+                            <MenuItem value={'Category1'}>Category1</MenuItem>
+                            <MenuItem value={'Category2'}>Category2</MenuItem>
                         </Select>
                     </FormControl>
                 </ThemeProvider>
@@ -219,8 +222,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
                             label="Screen"
                             onChange={handleChange}
                         >
-                            <MenuItem value={'Animals'}>Animals</MenuItem>
-                            <MenuItem value={'Plants'}>Plants</MenuItem>
+                            <MenuItem value={'Category1'}>Category1</MenuItem>
+                            <MenuItem value={'Category2'}>Category2</MenuItem>
                         </Select>
                     </FormControl>
                 </ThemeProvider>
@@ -233,13 +236,18 @@ const Channel = ({ darkMode, setDarkMode }) => {
                         <AiOutlineSearch fontSize={30} color='white' className='absolute right-4 top-[50%] translate-y-[-50%]' />
                         <input placeholder='Search' type="search " className='w-full border-none outline-none dark:text-white text-black  bg-[#E2E4E8] dark:bg-[#262F4A] p-2 px-4 rounded-md shadow-md' value={search} onChange={(e) => setSearch(e.target.value)} />
                     </div>
-                    <div className='grid grid-cols-2 gap-2 overflow-auto overflow-y-auto scroll'>
+                    <div className='grid md:grid-cols-1 lg:grid-cols-2 gap-2 overflow-auto overflow-y-auto scroll'>
 
                         {
 
                             filteredArray && filteredArray.map((animal, index) => {
 
-                                return <h1 key={index} className='max-w-[400px] rounded-md shadow-md  h-[30px] px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden'>{animal.toUpperCase()}</h1>
+                                return(<>
+                               <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden' >
+                                <h1 key={index} className="w-[100vw]" >{animal.toUpperCase()}</h1>
+                               </div>
+                                </>) 
+                                    
                             })
                         }
                     </div>
