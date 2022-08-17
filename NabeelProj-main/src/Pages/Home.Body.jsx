@@ -145,7 +145,8 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
         setFAQ(questions);
         console.log(currentSlide);
     }, [currentSlide])
-    const CustomCard1Para = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?";
+
+
     return (
         <>
             {/* Hero headings */}
@@ -212,9 +213,9 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             </div>
             {/* Three cards on a column with image with flex */}
             <div className='my-20 w-[90vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
-                <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={CustomCard1Para} buttonHeading="Discover the Channel List" image={mainimage4} icon={ <ListAltIcon></ListAltIcon>} />
-                <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={CustomCard1Para} buttonHeading="Discover the Channel List" image={mainimage3} />
-                <CustomCard3 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={CustomCard1Para}  image={mainimage2}  />
+                <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?"} buttonHeading="Discover the Channel List" image={mainimage4} icon={ <ListAltIcon></ListAltIcon>} />
+                <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?"} buttonHeading="Discover the Channel List" image={mainimage3} />
+                <CustomCard3 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?"}  image={mainimage2}  />
             
             </div>
             {/* Five stars */}

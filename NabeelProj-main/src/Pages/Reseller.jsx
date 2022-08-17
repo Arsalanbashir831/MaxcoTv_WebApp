@@ -4,7 +4,7 @@ import BitcoinLight from '../assets/BitcoinLight.svg'
 import WhiteCard from '../Components/WhiteCard'
 import { Data } from '../Components/ResellerData'
 import { questions } from '../Components/FaqData'
-import CustomAccordian from '../Components/CustomAccordian'
+
 import PriceTag from '../Components/PriceTag'
 import TimeTag from '../Components/TimeTag'
 import Carousel from 'react-material-ui-carousel'

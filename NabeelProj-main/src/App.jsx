@@ -5,6 +5,7 @@ import './index.css'
 const App = () => {
     const [darkMode, setDarkMode] = useState(true)
     return (
+    //  background color chnge
         <div className={`${darkMode ? 'dark ' : ''} ds`}>
             <div  >
                 <Home darkMode={darkMode} setDarkMode={setDarkMode} />

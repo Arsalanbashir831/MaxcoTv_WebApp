@@ -74,6 +74,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
         "Cockroach",
         "Cod",
         "Cormorant"]
+
+
     const Category2 = [
         "Tunisian Restaurant",
         "Hypnotherapy Service",
@@ -131,6 +133,45 @@ const Channel = ({ darkMode, setDarkMode }) => {
         "Dried Flower Shop",
         "Lawn Irrigation Equipment Supplier"
     ]
+    const Category3 = [
+        "Albatross",
+        "Alligatorsdfdsfdsfdsfds",
+        "Alpaca",
+        "Ant",
+        "Anteatersdfdsfdsfdsfd",
+        "Antelope",
+        "Ape",
+        "Armadillo",
+        "Donkey",
+        "Baboon",
+        "Badger",
+        "Barracuda",
+        "Bat",
+        "Bear",
+        "Beaver",
+        "Bee",
+        "Bison",
+        "Boar",
+        "Buffalo",
+        "Butterfly",
+        "Camel",
+        "Capybara",
+        "Caribou",
+        "Cassowary",
+        "Cat",
+        "Caterpillar",
+        "Cattle",
+        "Chamois",
+        "Cheetah",
+        "Chicken",
+        "Chimpanzee",
+        "Chinchilla",
+        "Chough",
+        "Clam",
+        "Cobra",
+        "Cockroach",
+        "Cod",
+        "Cormorant"]
 
 
     //filtering feature
@@ -149,11 +190,18 @@ const Channel = ({ darkMode, setDarkMode }) => {
                 setfilteredArray(Category2);
 
             }
+            if (current == 'Category3') {
+                setfilteredArray(null)
+                let temp = Category3.filter((category3) => (category3.toLowerCase().includes(search.toLowerCase())));
+                setfilteredArray(Category3);
+
+            }
         }
         else {
             let temp1 = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
             let temp2 = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
-            setfilteredArray(temp1.concat(temp2))
+            let temp3 = Category3.filter((category3) => (category3.toLowerCase().includes(search.toLowerCase())));
+            setfilteredArray(temp1.concat(temp2).concat(temp3))
         }
 
 
@@ -189,6 +237,17 @@ const Channel = ({ darkMode, setDarkMode }) => {
                             </button>
                         </div>
 
+                        <div onClick={(e) => {
+                            setCurrent('Category3');
+
+                        }}
+                            className={` ${current == 'Category3' ? Activebtn : notActiveBtn} h-[7%]`}>
+                            <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
+                                <h1 className='font-bold text-md'>Category3</h1>
+                                {current == 'Category3' ? <AiOutlineArrowRight /> : ""}
+                            </button>
+                        </div>
+
 
                     </div>
                 </MediaQuery>
@@ -212,6 +271,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                                     >
                                         <MenuItem value={'Category1'}>Category1</MenuItem>
                                         <MenuItem value={'Category2'}>Category2</MenuItem>
+                                        <MenuItem value={'Category3'}>Category3</MenuItem>
                                     </Select>
                                 </FormControl>
                             </ThemeProvider>
@@ -232,6 +292,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                                     >
                                         <MenuItem value={'Category1'}>Category1</MenuItem>
                                         <MenuItem value={'Category2'}>Category2</MenuItem>
+                                        <MenuItem value={'Category3'}>Category3</MenuItem>
                                     </Select>
                                 </FormControl>
                             </ThemeProvider>
