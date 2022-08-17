@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashboard from '../assets/Dashboard.svg'
+
 const WhiteCard = ({ image, heading, subHeading }) => {
     return (
         <div className='w-[300px] flex flex-col items-start justify-center whiteCard'>
