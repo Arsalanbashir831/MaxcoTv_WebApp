@@ -248,11 +248,11 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
                         {
 
-                            filteredArray && filteredArray.map((animal, index) => {
+                            filteredArray && filteredArray.map((list, index) => {
 
                                 return (<>
                                     <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden' >
-                                        <h1 key={index} className="w-[100vw]" >{animal.toUpperCase()}</h1>
+                                        <h1 key={index} className="w-[100vw]" >{list.toUpperCase()}</h1>
                                     </div>
                                 </>)
 
