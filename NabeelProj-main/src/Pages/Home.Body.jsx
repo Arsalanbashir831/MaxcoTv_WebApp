@@ -254,7 +254,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             <div className='z-10 lg:w-[95%]  lg:ml-10 '>
 
                 {/* <div onClick={handlePrevious} className='absolute top-[50%] translate-y-[-50%] left-2 md:left-32'><AiOutlineArrowLeft color='white' fontSize={30} /></div> */}
-                <Carousel className='md:block  lg:hidden' animation="slide" navButtonsAlwaysVisible="true" autoPlay="false" navButtonsAlwaysInvisible="true"  >
+                {/* <Carousel className='md:block  lg:hidden' animation="slide" navButtonsAlwaysVisible="true" autoPlay="false" navButtonsAlwaysInvisible="true"  >
                     {
                         customSmallCaardData.map((item, index) => {
 
@@ -263,8 +263,8 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                             </div>
                         })
                     }
-                </Carousel>
-                <Carousel className='md:hidden  lg:block' animation="slide" navButtonsAlwaysVisible="true" autoPlay="false"   >
+                </Carousel> */}
+                <Carousel  animation="slide" navButtonsAlwaysVisible="true" autoPlay="false" navButtonsAlwaysInvisible="true"   >
                     {
                         customSmallCaardData.map((item, index) => {
 
