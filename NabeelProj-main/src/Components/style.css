@@ -66,6 +66,8 @@
     }.guranteeCard{
         width: 99%;
         text-align: left;
+        justify-content: center;
+        align-items: center;
     }
 }
 
