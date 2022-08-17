@@ -43,17 +43,50 @@
         align-items: center;
     }
     .priceBox{
-        min-width: 10rem;
+        min-width: 5rem;
+    }
+    .service_text{
+        text-align: center;
+    }
+    .progressBar{
+        display: flex;
+        justify-content: start;
+        align-items: left;
+        flex-direction: column-reverse;
+        height: 3rem;
+    }
+    .customCardMainHead{
+        font-size: 2.5rem;
     }
 }
-@media only screen and (max-width:1023px){
-    /* .price_div{
-        display: none;
-    }
-    .price_div_col{
-        grid-template-columns: auto auto;
-    } */
+
+
+
+
+@media only screen and (max-width:386px){
+  
+   .service_div{
+    width: 100%;
+   }
 }
+@media only screen and (max-width:280px){
+  .main-text{
+font-size: 2.5rem;
+  }
+    .priceBox{
+        width: 100px;
+    }
+  .sidebar{
+    height: 100%;
+  }
+  .light-text{
+    font-size: 1.2rem;
+  }
+  .uptime-mainhead{
+    line-height: 0.75rem;
+    font-size: 1rem;
+  }
+ }
 
 .MuiAccordionSummary-content{
     height: 45px;

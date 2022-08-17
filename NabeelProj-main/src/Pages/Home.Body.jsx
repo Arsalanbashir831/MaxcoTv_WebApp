@@ -138,17 +138,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
 
     ]
 
-    const handleNext = () => {
-
-        const lenght = customSmallCaardData.length;
-        setCurrentSlide(currentSlide === lenght - 1 ? 0 : currentSlide + 1)
-    }
-    const handlePrevious = () => {
-        const lenght = customSmallCaardData.length;
-
-        setCurrentSlide(currentSlide === 0 ? lenght - 1 : currentSlide - 1)
-
-    }
+   
     useEffect(() => {
         setFAQ(questions);
         console.log(currentSlide);
@@ -158,8 +148,8 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
         <>
             {/* Hero headings */}
             <div className='mt-20 p-2' >
-                <h1 className='text-white  font-bold md:text-6xl text-5xl md:text-center'>DISCOVER THE #1 IPTV PROVIDER</h1>
-                <h2 className='md:text-center font-bold my-8 text-white  text-lg md:w-3/5 lg:w-[900px] mx-auto'>Today, we are revolutionizing the way you access IPTV. With +8000 channels and thousands of VOD, you'll be watching IPTV in a radically new, intelligent, and intuitive way</h2>
+                <h1 className='text-white  font-bold md:text-6xl text-5xl md:text-center main-text '>DISCOVER THE #1 IPTV PROVIDER</h1>
+                <h2 className='md:text-center  my-8 text-white  text-lg md:w-3/5 lg:w-[900px] mx-auto'>Today, we are revolutionizing the way you access IPTV. With +8000 channels and thousands of VOD, you'll be watching IPTV in a radically new, intelligent, and intuitive way</h2>
             </div >
             {/* Button */}
             <div className='flex items-center justify-center flex-col' >
@@ -174,19 +164,19 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             <div className='my-7 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[90vw] lg:max-w-[940px] mx-auto grid md:grid-cols-4 shadow-md rounded-md p-8 gap-10' >
                 <div className='flex  gap-2 items-center justify-center'>
                     <img src={player} alt="" />
-                    <h1 className='w-32 md:font-semibold md:text-xl dark:text-white text-blue-darkmd'>8000+ TV Channels</h1>
+                    <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>8000+ TV Channels</h1>
                 </div>
                 <div className='flex gap-2 items-center justify-center '>
                     <img src={multiUserIcon} alt="" />
-                    <h1 className='w-32 md:font-semibold md:text-xl dark:text-white text-blue-darkmd'>Multi User Access</h1>
+                    <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>Multi User Access</h1>
                 </div>
                 <div className='flex gap-2 items-center justify-center '>
                     <img src={hdQulityIcon} alt="" />
-                    <h1 className='w-32 md:font-semibold md:text-xl dark:text-white text-blue-darkmd'>FHD & HD Quality</h1>
+                    <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>FHD & HD Quality</h1>
                 </div>
                 <div className='flex gap-2 items-center justify-center '>
                     <img src={Thunder} alt="" />
-                    <h1 className='w-32 md:font-semibold md:text-xl dark:text-white text-blue-darkmd'>Anti Buffer 3.0</h1>
+                    <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>Anti Buffer 3.0</h1>
                 </div>
 
             </div >
@@ -204,7 +194,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             <div className='gap-8 flex flex-col mx-auto  items-start justify-center flex-wrap  w-[90vw] lg:w-[940px]'>
                 <div className='flex'>
                     <h1 className='text-white font-bold text-4xl'>Uptime</h1>
-                    <h2 className='text-gray-300 font-semibold text-2xl mt-2 ml-4'>Last 90 Days</h2>
+                    <h2 className='text-gray-300 font-semibold text-2xl mt-2 ml-4 light-text'>Last 90 Days</h2>
                 </div>
 
 

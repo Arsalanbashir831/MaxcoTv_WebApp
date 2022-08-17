@@ -6,7 +6,7 @@ const WhiteCard = ({ image, heading, subHeading }) => {
             {/* Add Custom images here via props */}
             <img src={image} className='lg:max-w-[200px] service-img' alt="" />
             <h1 className='dark:text-white font-bold text-blue-lightmd font-lg'>{heading}</h1>
-            <p className='dark:text-white  text-xl md:text-2xl w-[200px] text-blue-lightmd font-lg'>{subHeading}</p>
+            <p className='dark:text-white  lg:text-xl md:text-lg w-[200px] text-blue-lightmd font-lg  service_text '>{subHeading}</p>
         </div>
     )
 }
