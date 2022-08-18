@@ -67,7 +67,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
             <div className=' p-6 flex flex-wrap  items-center justify-center  mx-auto w-[85vw] lg:max-w-[1400px]'>
                 <div className='max-w-[500px]  flex-col gap-8 flex lg:items-start md:items-center items-start justify-around flex-wrap'>
                     <div className='flex items-center justify-center'>
-                        <h1 className='text-start text-white font-bold md:text-6xl text-5xl'>The Worlds <span className='text-orange-600 md:text-6xl text-5xl' >Best </span> IPTV Reseller Program</h1>
+                        <h1 className='text-start text-white font-semibold md:text-6xl text-5xl '>The Worlds <span className='text-orange-600 md:text-6xl text-5xl font-semibold ' >Best </span> IPTV Reseller Program</h1>
                     </div>
                     <div>
                         <p className='text-start text-white font-normal text-lg'>Earn Easy Money by Selling A Super-Fast, Super-Secure, And The Most Reliable IPTV Service.</p>

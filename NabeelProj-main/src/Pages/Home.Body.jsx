@@ -123,7 +123,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
             instruction: 'Up'
         },
         {
-            mainHeading: 'Load Balancers',
+            mainHeading: 'Load Balancer',
             perHeading: '99.99%',
             instruction: 'Up'
         }
@@ -151,7 +151,8 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
         <>
             {/* Hero headings */}
             <div className='mt-20 p-2' >
-                <h1 className='text-white  font-bold md:text-6xl text-5xl md:text-center main-text '>DISCOVER THE #1 IPTV PROVIDER</h1>
+            <h1 className='text-center font-semibold md:text-6xl text-5xl text-white'>DISCOVER THE #1 IPTV PROVIDER</h1>
+                {/* <h1 className='text-white  font-extrabold md:text-6xl text-5xl md:text-center main-text '>DISCOVER THE #1 IPTV PROVIDER</h1> */}
                 <h2 className='md:text-center  my-8 text-white  text-lg md:w-3/5 lg:w-[900px] mx-auto'>Today, we are revolutionizing the way you access IPTV. With +8000 channels and thousands of VOD, you'll be watching IPTV in a radically new, intelligent, and intuitive way</h2>
             </div >
             {/* Button */}

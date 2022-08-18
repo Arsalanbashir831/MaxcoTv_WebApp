@@ -6,6 +6,7 @@ import MediaQuery from 'react-responsive'
 import { Select, FormControl, InputLabel, MenuItem } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import Button from '@mui/material/Button';
 
 const Channel = ({ darkMode, setDarkMode }) => {
 
@@ -207,29 +208,35 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
 
     }, [search, current]);
-    let Category1Text="Category1";
-    let Category2Text="Category2";
-    let Category3Text="Category3";
+    let Category1Text = "Category1";
+    let Category2Text = "Category2";
+    let Category3Text = "Category3";
     return (
         <div className='md:w-screen lg:w-auto  my-20 '>
-            <h1 className='text-center font-bold md:text-6xl text-5xl text-white'>Our Full IPTV Channels List</h1>
+            <h1 className='text-center font-semibold md:text-6xl text-5xl text-white'>Our Full IPTV Channels List</h1>
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
             <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:max-w-[1400px] mx-auto'>
                 {/* left menu */}
                 <MediaQuery minWidth={768}>
                     <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                         {/* /button 1 */}
+
+
+
+
                         <div onClick={(e) => { setCurrent('Category1'); }}
                             className={` ${current == 'Category1' ? Activebtn : notActiveBtn} h-[7%]`}>
+                            <button className='flex items-center justify-between w-full p-1 overflow-hidden' variant="contained">
 
-                            <button className='flex items-center justify-between w-full p-1 overflow-hidden  '>
-                          
-                            <h1 className='font-bold text-md  '>{ Category1Text.slice(0,20) }</h1>
-                       
+                                <h1 className='font-bold text-md  '>{Category1Text.slice(0, 20)}</h1>
+
                                 {current == 'Category1' ? <KeyboardArrowRightIcon /> : ""}
 
-                            </button>
+                            </button> 
+
+                          
                         </div>
+
 
                         {/* /button 2 */}
                         <div onClick={(e) => {
@@ -238,7 +245,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                         }}
                             className={` ${current == 'Category2' ? Activebtn : notActiveBtn} h-[7%]`}>
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
-                                <h1 className='font-bold text-md'>{ Category2Text.slice(0,20) }</h1>
+                                <h1 className='font-bold text-md'>{Category2Text.slice(0, 20)}</h1>
                                 {current == 'Category2' ? <KeyboardArrowRightIcon /> : ""}
                             </button>
                         </div>
@@ -249,7 +256,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                         }}
                             className={` ${current == 'Category3' ? Activebtn : notActiveBtn} h-[7%]`}>
                             <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
-                                <h1 className='font-bold text-md'>{ Category3Text.slice(0,20) }</h1>
+                                <h1 className='font-bold text-md'>{Category3Text.slice(0, 20)}</h1>
                                 {current == 'Category3' ? <KeyboardArrowRightIcon /> : ""}
                             </button>
                         </div>
@@ -318,7 +325,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                             filteredArray && filteredArray.map((list, index) => {
 
                                 return (<>
-                                    <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden' >
+                                    <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden lg:font-semibold' >
                                         <h1 key={index} className="w-[100vw]" >{list.toUpperCase()}</h1>
                                     </div>
                                 </>)

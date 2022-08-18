@@ -35,7 +35,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
         
         <div className=' w-screen p-8 md:p-0  mx-auto flex flex-col items-center justify-center'>
 
-            <h1 className='text-center font-bold md:text-6xl text-5xl mt-20  text-white'>DOWNLOAD THE BEST IPTV APP</h1>
+            <h1 className='text-center font-semibold md:text-6xl text-5xl mt-20  text-white'>DOWNLOAD THE BEST IPTV APP</h1>
             <p className='text-center font-bold text-2xl mt-4  text-white'>Our Apps Work Flawlessly on tv, mobile and browser</p>
 
             
