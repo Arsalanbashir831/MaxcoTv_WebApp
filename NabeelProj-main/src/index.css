@@ -6,16 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    transition:   .4s ease-in-out;
     
 }
 
 body{
-    background: url('./assets/background.webp');
+    /* background: url('./assets/background.webp'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
-    background-size:100%
+    background-size:100%;
+    
 }
 
 html {
@@ -28,7 +29,8 @@ html {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    background-color: #1f3c91;
+
+    /* background-color: #1f3c91; */
 }
 
 .scroll::-webkit-scrollbar {

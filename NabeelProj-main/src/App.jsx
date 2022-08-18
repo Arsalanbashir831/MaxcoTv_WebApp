@@ -6,7 +6,7 @@ const App = () => {
     const [darkMode, setDarkMode] = useState(true)
     return (
     //  background color chnge
-        <div className={`${darkMode ? 'dark ' : ''} ds`}>
+        <div className="">
             <div  >
                 <Home darkMode={darkMode} setDarkMode={setDarkMode} />
             </div>
