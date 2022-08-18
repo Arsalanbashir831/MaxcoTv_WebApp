@@ -32,26 +32,26 @@ const Setup = ({ darkMode, setDarkMode }) => {
 
 
     return (
-        
-        <div className=' w-screen p-8 md:p-0  mx-auto flex flex-col items-center justify-center'>
+        <div className='my-16'>
+            <div className=' p-6 flex flex-wrap  items-center justify-center  mx-auto w-[100vw] lg:max-w-[1400px]'>
 
-            <h1 className='text-center font-semibold md:text-6xl text-5xl mt-20  text-white'>DOWNLOAD THE BEST IPTV APP</h1>
-            <p className='text-center font-bold text-2xl mt-4  text-white'>Our Apps Work Flawlessly on tv, mobile and browser</p>
+                <h1 className='text-center font-semibold md:text-6xl text-5xl mt-20  text-white'>DOWNLOAD THE BEST IPTV APP</h1>
+                <p className='text-center font-bold text-2xl mt-4  text-white'>Our Apps Work Flawlessly on tv, mobile and browser</p>
 
-            
+
                 <div className='mt-24  w-full md:w-[90%]  lg:max-w-[1100px] flex-wrap rounded-mg shadow-sm mx-auto flex items-center justify-between flex-col gap-8'>
                     <div className='w-full h-full p-2 justify-between   flex-wrap md:flex-row flex-col flex  gap-8'>
 
                         {/* /icon 1 */}
                         <div>
                             <ButtonBase style={{ height: 'max' }}>
-                                <div   onClick={(e) => {
+                                <div onClick={(e) => {
 
                                     WebRef.current?.scrollIntoView({ behavior: 'smooth' });
                                     setCurrent('Web');
                                     setPrevIndex(index);
                                     setIndex(0);
-                                    
+
 
                                 }} className={` ${current == 'Web' ? Activebtn : notActiveBtn} setupBtn`}>
 
@@ -114,8 +114,8 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                 }} className={` ${current == 'Box & Stick' ? Activebtn : notActiveBtn}   setupBtn`}>
                                     <button className='iconBtn'>
                                         <TbDevices style={{
-                                            height:"94px",
-                                            width:"120px"
+                                            height: "94px",
+                                            width: "120px"
                                         }} fontSize={60} />
                                         <h1 className='font-bold text-xl btntext_box'>Box & Stick</h1>
                                     </button>
@@ -127,7 +127,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                         <div>
                             <ButtonBase>
                                 <div onClick={(e) => {
-                                    
+
                                     setCurrent('Casting');
                                     setPrevIndex(index);
                                     setIndex(4);
@@ -146,27 +146,28 @@ const Setup = ({ darkMode, setDarkMode }) => {
                     </div>
                 </div>
 
-           
-            
-            
-       
-            <div className='mt-6 max-w-full md:w-[90%]  lg:max-w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
-                {current === 'Web' && (prevIndex >= index)? <Slide duration= {700} enter = 'false' left> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
-                {current === 'Web' && (prevIndex < index)? <Slide duration= {700} enter = 'false' right> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
 
-                {current === 'Mobile'  && (prevIndex >= index) ? <Slide left duration= {700} enter = 'false'> <div ref={MobileRef}> <MobileSetup /></div> </Slide > : ''}
-                {current === 'Mobile'  && (prevIndex < index) ? <Slide right duration= {700} enter = 'false'> <div ref={MobileRef}> <MobileSetup /></div> </Slide > : ''}
-                
-                {current === 'TV' && (prevIndex >= index) ? <Slide left duration= {700} enter = 'false'> <div ref={TvRef}><TvSetup /></div> </Slide > : ''}
-                {current === 'TV' && (prevIndex < index) ? <Slide right duration= {700} enter = 'false'> <div ref={TvRef}><TvSetup /></div> </Slide > : ''} 
 
-                {current === 'Box & Stick' && (prevIndex >= index) ?  <Slide left duration= {700} enter = 'false'> <div ref={BoxRef}><BoxSetup /></div> </Slide > : ''}
-                {current === 'Box & Stick' && (prevIndex < index) ? <Slide right duration= {700} enter = 'false'> <div ref={BoxRef}><BoxSetup /></div> </Slide > : ''}
 
-                {current === 'Casting' && (prevIndex >= index) ?  <Slide left duration= {700} enter = 'false'> <div ref={CastingRef}><CastingSetup /></div>  </Slide > : ''}
-                {current === 'Casting' && (prevIndex < index) ?  <Slide right duration= {700} enter = 'false'> <div ref={CastingRef}><CastingSetup /></div>  </Slide > : ''}
-            </div>
-        </div >
+
+                <div className='mt-6 max-w-full md:w-[90%]  lg:max-w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
+                    {current === 'Web' && (prevIndex >= index) ? <Slide duration={700} enter='false' left> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
+                    {current === 'Web' && (prevIndex < index) ? <Slide duration={700} enter='false' right> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
+
+                    {current === 'Mobile' && (prevIndex >= index) ? <Slide left duration={700} enter='false'> <div ref={MobileRef}> <MobileSetup /></div> </Slide > : ''}
+                    {current === 'Mobile' && (prevIndex < index) ? <Slide right duration={700} enter='false'> <div ref={MobileRef}> <MobileSetup /></div> </Slide > : ''}
+
+                    {current === 'TV' && (prevIndex >= index) ? <Slide left duration={700} enter='false'> <div ref={TvRef}><TvSetup /></div> </Slide > : ''}
+                    {current === 'TV' && (prevIndex < index) ? <Slide right duration={700} enter='false'> <div ref={TvRef}><TvSetup /></div> </Slide > : ''}
+
+                    {current === 'Box & Stick' && (prevIndex >= index) ? <Slide left duration={700} enter='false'> <div ref={BoxRef}><BoxSetup /></div> </Slide > : ''}
+                    {current === 'Box & Stick' && (prevIndex < index) ? <Slide right duration={700} enter='false'> <div ref={BoxRef}><BoxSetup /></div> </Slide > : ''}
+
+                    {current === 'Casting' && (prevIndex >= index) ? <Slide left duration={700} enter='false'> <div ref={CastingRef}><CastingSetup /></div>  </Slide > : ''}
+                    {current === 'Casting' && (prevIndex < index) ? <Slide right duration={700} enter='false'> <div ref={CastingRef}><CastingSetup /></div>  </Slide > : ''}
+                </div>
+            </div >
+        </div>
     )
 }
 
