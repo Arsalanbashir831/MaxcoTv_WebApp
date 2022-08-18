@@ -92,9 +92,11 @@
     }.upper_pricetag_type{
         display: block;
         margin-top: 10px;
-    }.lower_pricetage_type{
+    }
+    /* .lower_pricetage_type{
         display: none;
-    }.cast-google-text{
+    } */
+    .cast-google-text{
         font-size: 1rem;
     }
     .cast-google-icon{
@@ -119,23 +121,24 @@
         display: none;
     }.price_div_mob{
      display: block;
-    }.upper_pricetag_type{
+    }
+   
+    .lower_pricetage_type{
         display: block;
-        margin-top: 10px;
-    }.lower_pricetage_type{
-        display: none;
     }
 }
 
 
-@media only screen and (max-width:386px){
+@media only screen and (max-width:391px){
   
    .service_div{
     width: 100%;
    }
   .price_main_div{
     width: 100%;
-  }
+  } .priceBox{
+    min-width: 8rem;
+}
 }
 @media only screen and (max-width:280px){
   .main-text{

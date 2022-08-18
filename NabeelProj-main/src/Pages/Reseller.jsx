@@ -117,22 +117,22 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                 <div className='sm:w-[100%]  gap-6 md:my-8 grid lg:grid-cols-4 md:grid-cols-2 price_div'>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
                         <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <ArrowDropDownIcon></ArrowDropDownIcon>
+                        <ArrowDropDownIcon className='transition-none'></ArrowDropDownIcon>
                         <PriceTag price='20' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
                         <PriceTag price='300' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <ArrowDropDownIcon></ArrowDropDownIcon>
+                        <ArrowDropDownIcon className='transition-none' ></ArrowDropDownIcon>
                         <PriceTag price='100' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
                         <PriceTag price='500' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <ArrowDropDownIcon></ArrowDropDownIcon>
+                        <ArrowDropDownIcon className='transition-none'></ArrowDropDownIcon>
                         <PriceTag price='300' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
                         <PriceTag price='1000' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <ArrowDropDownIcon></ArrowDropDownIcon>
+                        <ArrowDropDownIcon className='transition-none' ></ArrowDropDownIcon>
                         <PriceTag price='700' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
 
@@ -143,27 +143,27 @@ const Reseller = ({ darkMode, setDarkMode }) => {
 <div className='sm:w-[100%]  gap-6 md:my-8 grid lg:hidden md:hidden price_div_mob'>
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[43px]' ></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
                         <PriceTag price='20' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                  
                     
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='300' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[43px]' ></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
                         <PriceTag price='100' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                   
                    
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='500' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[43px]' ></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
                         <PriceTag price='300' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                   
                     <div className='  text-center flex justify-center items-center md:flex-row '>
                         <PriceTag price='1000' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[43px]'></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-2rem]'></KeyboardArrowRightIcon>
                         <PriceTag price='700' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                   
@@ -175,7 +175,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
 
 
 
-                <h1 className='dark:text-white text-blue-lightmd text-4xl font-bold'>Package Cost for Resellers</h1>
+                <h1 className='dark:text-white text-blue-lightmd text-4xl font-bold  text-center'>Package Cost for Resellers</h1>
                 <div className='grid lg:grid-cols-4 grid-cols-2 gap-4 sm:w-[100%] md:max-w-[900px]'>
                     <TimeTag month='1' credit='5' type="Month" />
                     <TimeTag month="3" credit='10' type="Month" />
