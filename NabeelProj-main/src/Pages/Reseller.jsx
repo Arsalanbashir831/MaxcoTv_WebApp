@@ -16,6 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 
 const Reseller = ({ darkMode, setDarkMode }) => {
@@ -110,6 +111,8 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                 {/* desktop view manage  */}
  {/* #00b40efc green
  #ffd000fc orange */}
+
+ {/* desktop view */}
                 <div className='sm:w-[100%]  gap-6 md:my-8 grid lg:grid-cols-4 md:grid-cols-2 price_div'>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
                         <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
@@ -133,6 +136,43 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                     </div>
 
                 </div>
+
+{/* Mobile view  */}
+
+<div className='sm:w-[100%]  gap-6 md:my-8 grid lg:hidden md:hidden price_div_mob'>
+                    <div className='  text-center  flex justify-center items-center md:flex-row '>
+                        <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
+                        <KeyboardArrowRightIcon className='mt-[43px]' ></KeyboardArrowRightIcon>
+                        <PriceTag price='20' type="Credits" unit=" " color=" #ffd000fc" />
+                    </div>
+                 
+                    
+                    <div className='  text-center  flex justify-center items-center md:flex-row '>
+                        <PriceTag price='300' type="Top-Up Amount" unit="£" color="#00b40efc "  />
+                        <KeyboardArrowRightIcon className='mt-[43px]' ></KeyboardArrowRightIcon>
+                        <PriceTag price='100' type="Credits" unit=" " color=" #ffd000fc" />
+                    </div>
+                  
+                   
+                    <div className='  text-center  flex justify-center items-center md:flex-row '>
+                        <PriceTag price='500' type="Top-Up Amount" unit="£" color="#00b40efc "  />
+                        <KeyboardArrowRightIcon className='mt-[43px]' ></KeyboardArrowRightIcon>
+                        <PriceTag price='300' type="Credits" unit=" " color=" #ffd000fc" />
+                    </div>
+                  
+                    <div className='  text-center flex justify-center items-center md:flex-row '>
+                        <PriceTag price='1000' type="Top-Up Amount" unit="£" color="#00b40efc "  />
+                        <KeyboardArrowRightIcon className='mt-[43px]'></KeyboardArrowRightIcon>
+                        <PriceTag price='700' type="Credits" unit=" " color=" #ffd000fc" />
+                    </div>
+                  
+                </div>
+
+
+
+
+
+
 
                 <h1 className='dark:text-white text-blue-lightmd text-4xl font-bold'>Package Cost for Resellers</h1>
                 <div className='grid lg:grid-cols-4 grid-cols-2 gap-4 sm:w-[100%] md:max-w-[900px]'>

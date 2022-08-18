@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/Logo.svg'
+import Logo from '../assets/mainLogo.png'
 // import Logo from '../assets/example.png'
 // import Logo from '../assets/example.png'
 import { TbGridDots } from 'react-icons/tb'
@@ -27,7 +27,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className='flex justify-center items-center'>
                     <Link to='/'>
                     {/* className='max-h-[50px] max-w-[80px]'  */}
-                        <img  src={Logo} alt="Logo-image" />
+                        <img className='relative top-[-6px] max-h-[6rem] lg:h-[5rem]  nav-logo max-w-[300px]'  src={Logo} alt="Logo-image" />
                     </Link>
 
                 </div>

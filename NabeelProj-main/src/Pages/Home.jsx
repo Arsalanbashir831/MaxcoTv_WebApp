@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
-import Logo from '../assets/Logo.svg'
+import Logo from '../assets/mainLogo.png'
 import { FiMenu } from 'react-icons/fi'
 import { AiOutlineClose } from 'react-icons/ai'
 import moon from '../assets/moon.svg'
@@ -38,7 +38,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                 </div>
                 {/* Mobile version Navbar expandable */}
                 <div className={`z-20 lg:hidden mx-auto    flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
-                    <img src={Logo} alt="Logo" />
+                    <img className='max-w-[100px] max-h-[100px]' src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         {/* <div className='p-4'>
                           {
@@ -61,7 +61,7 @@ const Home = ({ darkMode, setDarkMode }) => {
 
                                     <AiOutlineClose onClick={() => setToggleSidebar(!toggleSidebar)} color='white' fontSize={25} />
                                 </div>
-                                <Link to='/'><img src={Logo} alt="" className='h-8' /></Link>
+                                <Link to='/'><img className='h-[6rem] ' src={Logo} alt=""/></Link>
 
                                 <div className='flex py-4 border-b border-gray-50  gap-8 flex-col justify-start items-start font-extrabold font-2xl w-4/5 '>
                                     <Link to='/'><h1 >HOME</h1></Link>
