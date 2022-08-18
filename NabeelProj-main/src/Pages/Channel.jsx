@@ -175,6 +175,45 @@ const Channel = ({ darkMode, setDarkMode }) => {
         "Cod",
         "Cormorant"]
 
+        const Category4 = [
+            "Ape",
+            "Armadillo",
+            "Donkey",
+            "Baboon",
+            "Badger",
+            "Barracuda",
+            "Bat",
+            "Bear",
+            "Beaver",
+            "Bee",
+            "Bison",
+            "Boar",
+            "Buffalo",
+            "Butterfly",
+            "Camel",
+            "Capybara",
+            "Caribou",
+            "Cassowary",
+            "Cat",
+            "Caterpillar",
+            "Cattle",
+            "Chamois",
+            "Cheetah",
+            "Chicken",
+            "Chimpanzee",
+            "Chinchilla",
+            "Chough",
+            "Clam",
+            "Cobra",
+            "Cockroach",
+            "Cod",
+            "Cormorant"]
+
+
+
+
+
+
 
     //filtering feature
     useEffect(() => {
@@ -198,19 +237,30 @@ const Channel = ({ darkMode, setDarkMode }) => {
                 setfilteredArray(Category3);
 
             }
+            if (current == 'Category4') {
+                setfilteredArray(null)
+                let temp = Category4.filter((category4) => (category4.toLowerCase().includes(search.toLowerCase())));
+                setfilteredArray(Category4);
+
+            }
         }
         else {
             let temp1 = Category1.filter((category1) => (category1.toLowerCase().includes(search.toLowerCase())));
             let temp2 = Category2.filter((category2) => (category2.toLowerCase().includes(search.toLowerCase())));
             let temp3 = Category3.filter((category3) => (category3.toLowerCase().includes(search.toLowerCase())));
-            setfilteredArray(temp1.concat(temp2).concat(temp3))
+            let temp4 = Category4.filter((category4) => (category4.toLowerCase().includes(search.toLowerCase())));
+
+            setfilteredArray(temp1.concat(temp2).concat(temp3).concat(temp4))
         }
 
 
     }, [search, current]);
-    let Category1Text = "Category1";
-    let Category2Text = "Category2";
-    let Category3Text = "Category3";
+    // for adding new categories
+    let Category1Text = "Arsalan";
+    let Category2Text = "Nabeel";
+    let Category3Text = "Ahmed Bhai";
+    let Category4Text = "Category4";
+    
     return (
         <div className='md:w-screen lg:w-auto  my-20 '>
             <h1 className='text-center font-semibold md:text-6xl text-5xl text-white'>Our Full IPTV Channels List</h1>
@@ -220,9 +270,6 @@ const Channel = ({ darkMode, setDarkMode }) => {
                 <MediaQuery minWidth={768}>
                     <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                         {/* /button 1 */}
-
-
-
 
                         <div onClick={(e) => { setCurrent('Category1'); }}
                             className={` ${current == 'Category1' ? Activebtn : notActiveBtn} h-[7%]`}>
@@ -260,9 +307,22 @@ const Channel = ({ darkMode, setDarkMode }) => {
                                 {current == 'Category3' ? <KeyboardArrowRightIcon /> : ""}
                             </button>
                         </div>
+                        {/* last button */}
+                      
+                        <div onClick={(e) => {
+                            setCurrent('Category4');
+
+                        }}
+                            className={` ${current == 'Category4' ? Activebtn : notActiveBtn} h-[7%]`}>
+                            <button className='flex items-center justify-between w-full p-1 overflow-hidden'>
+                                <h1 className='font-bold text-md'>{Category4Text.slice(0, 20)}</h1>
+                                {current == 'Category4' ? <KeyboardArrowRightIcon /> : ""}
+                            </button>
+                        </div>
 
 
                     </div>
+                   
                 </MediaQuery>
 
                 {/* The combo box */}
@@ -282,9 +342,11 @@ const Channel = ({ darkMode, setDarkMode }) => {
                                         label="Screen"
                                         onChange={handleChange}
                                     >
-                                        <MenuItem value={'Category1'}>Category1</MenuItem>
-                                        <MenuItem value={'Category2'}>Category2</MenuItem>
-                                        <MenuItem value={'Category3'}>Category3</MenuItem>
+                                        <MenuItem value={'Category1'}>{Category1Text.slice(0,20)}</MenuItem>
+                                        <MenuItem value={'Category2'}>{Category2Text.slice(0,20)}</MenuItem>
+                                        <MenuItem value={'Category3'}>{Category3Text.slice(0,20)}</MenuItem>
+                                        <MenuItem value={'Category4'}>{Category4Text.slice(0,20)}</MenuItem>
+                                       
                                     </Select>
                                 </FormControl>
                             </ThemeProvider>
@@ -303,9 +365,11 @@ const Channel = ({ darkMode, setDarkMode }) => {
                                         label="Screen"
                                         onChange={handleChange}
                                     >
-                                        <MenuItem value={'Category1'}>Category1</MenuItem>
-                                        <MenuItem value={'Category2'}>Category2</MenuItem>
-                                        <MenuItem value={'Category3'}>Category3</MenuItem>
+                                        <MenuItem value={'Category1'}>{Category1Text.slice(0,20)}</MenuItem>
+                                        <MenuItem value={'Category2'}>{Category2Text.slice(0,20)}</MenuItem>
+                                        <MenuItem value={'Category3'}>{Category3Text.slice(0,20)}</MenuItem>
+                                        <MenuItem value={'Category4'}>{Category4Text.slice(0,20)}</MenuItem>
+                                      
                                     </Select>
                                 </FormControl>
                             </ThemeProvider>
