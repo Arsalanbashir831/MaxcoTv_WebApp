@@ -256,7 +256,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
     }, [search, current]);
     // for adding new categories
-    let Category1Text = "Arsalan";
+    let Category1Text = "UK | Entertainment";
     let Category2Text = "Nabeel";
     let Category3Text = "Ahmed Bhai";
     let Category4Text = "Category4";
