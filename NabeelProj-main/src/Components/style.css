@@ -154,3 +154,12 @@ font-size: 2.5rem;
     align-items: center;
     
 }
+body {
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    /* set the light colors here if needed */
+  }
+
+  .with-colors-transition {
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+    /* set the light colors here if needed */
+ }

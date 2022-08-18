@@ -30,14 +30,14 @@ const Home = ({ darkMode, setDarkMode }) => {
     }
     window.addEventListener('scroll', changeNavBg);
     return (
-        <div className='flex items-center w-full justify-center'>
+        <div className='flex items-center w-full justify-center with-colors-transition'>
             {/* Pc version navbar */}
             <div>
                 <div className='lg:block w-[100vw] z-20 sticky top-0 hidden'>
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 {/* Mobile version Navbar expandable */}
-                <div className={`z-20 lg:hidden mx-auto    flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
+                <div className={`z-20 lg:hidden mx-auto  with-colors-transition flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
                     <img className='max-w-[100px] max-h-[100px]' src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         {/* <div className='p-4'>
@@ -55,7 +55,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                 {/* Mobile version sidebar*/}
                 {
                     toggleSidebar && (
-                        <div className='z-50 h-[100%] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-hidden shadow-md '>
+                        <div className='z-50 h-[100%] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-hidden shadow-md with-colors-transition '>
                             <div className='my-4 relative flex flex-col justify-between items-center gap-4 w-full h-full  sidebar'>
                                 <div className='absolute right-0 -top-2 bottom-0 text-end p-4'>
 
@@ -75,19 +75,19 @@ const Home = ({ darkMode, setDarkMode }) => {
                                     <button type='button' onClick={() => setDarkMode(!darkMode)}>
                                         {
                                             darkMode ?
-                                                <div className='flex justify-center items-center gap-2'>
+                                                <div className=' with-colors-transition flex justify-center items-center gap-2'>
                                                     <img src={sun} alt="" />
                                                     <h1>Light Mode</h1>
                                                 </div>
                                                 :
-                                                <div className='flex justify-center items-center gap-2'>
+                                                <div className=' with-colors-transition flex justify-center items-center gap-2'>
                                                     <img src={moon} alt="" />
                                                     <h1>Dark Mode</h1>
                                                 </div>
                                         }
                                     </button>
                                 </div>
-                                <div className={`dark:bg-[#070F24] p-4 mb-8 bg-[#122250] w-full flex flex-col items-center justify-center gap-5`}>
+                                <div className={` with-colors-transition dark:bg-[#070F24] p-4 mb-8 bg-[#122250] w-full flex flex-col items-center justify-center gap-5`}>
                                     <button type='button' className='bg-white rounded-sm shadow-sm w-full px-4 py-2 text-blue-darkmd '>
                                         LOG IN
                                     </button>
