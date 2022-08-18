@@ -113,10 +113,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
 
                                 }} className={` ${current == 'Box & Stick' ? Activebtn : notActiveBtn}   setupBtn`}>
                                     <button className='iconBtn'>
-                                        <TbDevices style={{
-                                            height:"94px",
-                                            width:"120px"
-                                        }} fontSize={60} />
+                                        <TbDevices className='lg:h-[94px] lg:w-[120px] md:h-[94px] md:w-[120px] boxIcon' fontSize={60} />
                                         <h1 className='font-bold text-xl btntext_box'>Box & Stick</h1>
                                     </button>
 

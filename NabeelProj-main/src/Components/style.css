@@ -39,8 +39,12 @@
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: left;
+       gap: 5rem;
         
+    }.boxIcon{
+        height: 80px;
+        width: 80px;
     }
    
     .whiteCard{

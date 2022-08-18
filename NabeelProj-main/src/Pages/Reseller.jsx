@@ -4,6 +4,7 @@ import BitcoinLight from '../assets/BitcoinLight.svg'
 import WhiteCard from '../Components/WhiteCard'
 import { Data } from '../Components/ResellerData'
 import { questions } from '../Components/FaqData'
+import { Resellersquestions } from '../Components/ResellersFAQs'
 
 import PriceTag from '../Components/PriceTag'
 import TimeTag from '../Components/TimeTag'
@@ -59,7 +60,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
     const [data, setData] = useState(null)
     const [FAQ, setFAQ] = useState(null);
     useEffect(() => {
-        setFAQ(questions);
+        setFAQ(Resellersquestions);
         setData(Data)
     }, [])
     return (
