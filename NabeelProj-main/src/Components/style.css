@@ -85,6 +85,22 @@
         margin-top: 10px;
     }.lower_pricetage_type{
         display: none;
+    }.cast-google-text{
+        font-size: 1rem;
+    }
+    .cast-google-icon{
+       width: 10rem;
+      
+    }.cast-apple-text{
+        font-size: 1rem; 
+    }.cast-apple-icon{
+        width: 10rem;
+    }.cast-div{
+        gap: 5rem;
+    }.Mcast-text{
+        font-size: 1rem; 
+    }.MCast-icon{
+        width: 10rem;
     }
 }
 
@@ -128,7 +144,9 @@ font-size: 2.5rem;
   .uptime-mainhead{
     line-height: 0.75rem;
     font-size: 1rem;
-  }
+  }.cast-div{
+    gap: 0rem;
+}
  }
 
 .MuiAccordionSummary-content{
