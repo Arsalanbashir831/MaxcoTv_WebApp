@@ -267,8 +267,8 @@ const Channel = ({ darkMode, setDarkMode }) => {
             <p className='text-white mt-6 text-center font-semibold text-lg'>An Easy Access And Super Simple IPTV Services For Your Devives</p>
             <div className='flex md:flex-row my-12  flex-col items-center justify-center gap-4 sm:w-auto  md:w-[90%] lg:max-w-[1400px] mx-auto'>
                 {/* left menu */}
-                <MediaQuery minWidth={768}>
-                    <div className='dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
+                <MediaQuery minWidth={770}>
+                    <div className='chanelLeftdiv dark:bg-[#040E2E]  overflow-h p-2 px-2  md:h-[600px] md:w-[20%] w-[90%] flex flex-col items-center justify-start  gap-2 bg-[#FFFFFF] rounded-md shadow-md'>
                         {/* /button 1 */}
 
                         <div onClick={(e) => { setCurrent('Category1'); }}
@@ -326,7 +326,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
                 </MediaQuery>
 
                 {/* The combo box */}
-                <MediaQuery minWidth={0} maxWidth={768}>
+                <MediaQuery minWidth={0} maxWidth={769}>
 
                     {darkMode ?
 
