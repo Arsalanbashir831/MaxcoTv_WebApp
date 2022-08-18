@@ -15,6 +15,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    background-size:100%
 }
 
 html {
@@ -27,6 +28,7 @@ html {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    background-color: #1f3c91;
 }
 
 .scroll::-webkit-scrollbar {
