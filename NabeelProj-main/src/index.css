@@ -32,3 +32,6 @@ html {
 .scroll::-webkit-scrollbar {
     display: none;
 }
+body,html{
+    font-family: 'Vazir',sans-serif;
+}
