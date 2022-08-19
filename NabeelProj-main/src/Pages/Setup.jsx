@@ -147,7 +147,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
             
             
        
-            <div className='mt-6 max-w-full md:w-[90%]  lg:max-w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8'>
+            <div className='mt-6 max-w-full md:w-[90%]  lg:max-w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8 bottom-setup-div'>
                 {current === 'Web' && (prevIndex >= index)? <Slide duration= {700} enter = 'false' left> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
                 {current === 'Web' && (prevIndex < index)? <Slide duration= {700} enter = 'false' right> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
 

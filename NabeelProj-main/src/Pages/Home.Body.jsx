@@ -150,31 +150,31 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
     return (
         <>
             {/* Hero headings */}
-            <div className='mt-20 p-2' >
+            <div className='transition-all duration-300 ease-in-out mt-20 p-2' >
             <h1 className='text-center font-semibold md:text-6xl text-5xl text-white'>DISCOVER THE #1 IPTV PROVIDER</h1>
                 {/* <h1 className='text-white  font-extrabold md:text-6xl text-5xl md:text-center main-text '>DISCOVER THE #1 IPTV PROVIDER</h1> */}
                 <h2 className='md:text-center  my-8 text-white  text-lg md:w-3/5 lg:w-[900px] mx-auto'>Today, we are revolutionizing the way you access IPTV. With +8000 channels and thousands of VOD, you'll be watching IPTV in a radically new, intelligent, and intuitive way</h2>
             </div >
             {/* Button */}
-            <div className='flex items-center justify-center flex-col' >
+            <div className='transition-all duration-300 ease-in-out flex items-center justify-center flex-col' >
                 <button type='button' className=' py-2 px-16 rounded-md shadow-sm  bg-green-200 text-white'>JOIN US NOW</button>
                 <p className='text-white mt-2'>7 Days Money Back Guarantee</p>
             </div >
             {/* Main image */}
-            <div className='md:flex hidden items-center justify-center my-12' >
+            <div className='transition-all duration-300 ease-in-out md:flex hidden items-center justify-center my-12' >
                 <img className='w-[900px] h-[450px]' src={MainPic} alt="" />
             </div >
             {/* ICONS section */}
-            <div className='my-7 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[90vw] lg:max-w-[940px] mx-auto grid md:grid-cols-4 shadow-md rounded-md p-8 gap-10' >
+            <div className='transition-all duration-300 ease-in-out my-7 h-auto md:my-8 dark:bg-blue-darkmd bg-white w-[90vw] lg:max-w-[940px] mx-auto grid md:grid-cols-4 shadow-md rounded-md p-8 gap-10' >
                 <div className='flex  gap-2 items-center justify-center'>
                     <img src={player} alt="" />
                     <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>8000+ TV Channels</h1>
                 </div>
-                <div className='flex gap-2 items-center justify-center '>
+                <div className='transition-all duration-300 ease-in-out flex gap-2 items-center justify-center '>
                     <img src={multiUserIcon} alt="" />
                     <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>Multi User Access</h1>
                 </div>
-                <div className='flex gap-2 items-center justify-center '>
+                <div className='transition-all duration-300 ease-in-out flex gap-2 items-center justify-center '>
                     <img src={hdQulityIcon} alt="" />
                     <h1 className='w-32 font-bold md:text-xl dark:text-white text-blue-darkmd'>FHD & HD Quality</h1>
                 </div>
@@ -195,7 +195,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     })
                 }
             </div>
-            <div className='gap-8 flex flex-col mx-auto  items-start justify-center flex-wrap  w-[90vw] lg:w-[940px]'>
+            <div className=' transition-all duration-300 ease-in-out gap-8 flex flex-col mx-auto  items-start justify-center flex-wrap  w-[90vw] lg:w-[940px]'>
                 <div className='flex'>
                     <h1 className='text-white font-bold text-4xl'>Uptime</h1>
                     <h2 className='text-gray-300 font-semibold text-2xl mt-2 ml-4 light-text'>Last 90 Days</h2>
@@ -213,7 +213,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
             </div>
             {/* Three cards on a column with image with flex */}
-            <div className='my-20 w-[90vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
+            <div className=' transition-all duration-300 ease-in-out my-20 w-[90vw]  lg:w-[940px] mx-auto h-auto flex flex-col items-center justify-center gap-8'>
                 <CustomCard1 mainHeading={"8000+"} subHeading="Live Tv Channels" subPara={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?"} buttonHeading="Discover the Channel List" image={mainimage4} icon={ <ListAltIcon></ListAltIcon>} />
                 <CustomCard2 mainHeading={"EPG"} subHeading="In Most Channels" subPara={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?"} buttonHeading="Discover the Channel List" image={mainimage3} />
                 <CustomCard3 mainHeading={"Thousands"} subHeading="Of Movies and Series" subPara={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus eligendi hic dicta soluta veniam maxime asperiores inventore, veritatis voluptatem consequatur iste fugit ullam facilis, quibusdam odio eius nisi corrupti?"}  image={mainimage2}  />
@@ -228,7 +228,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 <img src={Yellostar} alt="" />
             </div>
             {/* Heading and subheading beneath five stars on web page */}
-            <div className='flex items-center justify-center'>
+            <div className=' flex items-center justify-center'>
                 <div className='flex items-center flex-col justify-center'>
                     <h1 className='text-white font-bold text-4xl text-center'>A Five Star IPTV Experience</h1>
                     <p className='md:w-[600px] my-8 text-white font-bold text-normal text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, rerum ad? Eveniet, saepe doloremque incidunt totam corrupti neque rem possimus
@@ -263,7 +263,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     {
                         customSmallCaardData.map((item, index) => {
 
-                            return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'fit-content', maxHeight: '60vh' }}>
+                            return <div className='transition-all duration-300 ease-in-out' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'fit-content', maxHeight: '60vh' }}>
                                 <CustomSmallCard key={index} {...item} />
                             </div>
                         })
@@ -293,19 +293,19 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                 </div>
 
             </div>
-            <div className='w-[40vw] lg:w-[500px]  mt-8  p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
+            <div className=' transition-all duration-300 ease-in-out w-[40vw] lg:w-[500px]  mt-8  p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
                 <div className='flex items-center justify-center flex-col'>
                     <button type='button' className='w-'>
                         <h1 className='text-white text-3xl font-bold'>Get My Instant Access Now</h1>
                     </button>
                 </div>
             </div>
-            <p className='text-white font-medium text-center my-2'>30 Day Money Back Guarantee</p>
+            <p className='transition-all duration-300 ease-in-out text-white font-medium text-center my-2'>30 Day Money Back Guarantee</p>
             <div className='mx-auto my-28 w-[80vw]  lg:w-[940px] flex items-center justify-center guranteeCard'>
                 <Guarantee darkMode={darkMode} />
             </div>
             <h1 className='text-white my-30 text-5xl font-semibold mx-auto text-center'>FAQ</h1>
-            <div className='my-8 w-[90vw] lg:max-w-[940px] mx-auto flex flex-col items-center justify-center gap-6'>
+            <div className=' transition-all duration-300 ease-in-out my-8 w-[90vw] lg:max-w-[940px] mx-auto flex flex-col items-center justify-center gap-6'>
                 {
                     FAQ && FAQ.map((faq, index) => {
                         const { id, question, answer } = faq
@@ -350,7 +350,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                     })
                 }
             </div>
-            <div className='w-[40vw] lg:w-[500px] mt-8 p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
+            <div className=' transition-all duration-300 ease-in-out w-[40vw] lg:w-[500px] mt-8 p-4 rounded-lg shadow-md mx-auto bg-green-500 hidden md:flex items-center justify-center flex-col '>
                 <div className='flex items-center justify-center flex-col'>
                     <button type='button' className='w-'>
                         <h1 className='text-white text-3xl font-bold'>Get My Instant Access Now</h1>

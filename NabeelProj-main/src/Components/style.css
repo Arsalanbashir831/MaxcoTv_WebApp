@@ -141,6 +141,10 @@
   }.service-container{
     width: 98vw;
   }
+  .bottom-setup-div{
+    min-width: 95vw;
+    margin-left: -20px;
+  }
   /* .priceBox{
  
   } */
