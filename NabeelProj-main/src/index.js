@@ -7,7 +7,7 @@ const root = ReactDom.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Router >
-            <App />
+            <App className="transition-all duration-300 ease-in-out" />
         </Router>
     </React.StrictMode >
 );

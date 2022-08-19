@@ -30,7 +30,7 @@ const Home = ({ darkMode, setDarkMode }) => {
     }
     window.addEventListener('scroll', changeNavBg);
     return (
-        <div className='flex items-center w-full justify-center'>
+        <div className=' transition-all duration-300 ease-in-out  flex items-center w-full justify-center'>
             {/* Pc version navbar */}
             <div>
                 <div className='lg:block w-[100vw] z-20 sticky top-0 hidden'>
@@ -55,7 +55,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                 {/* Mobile version sidebar*/}
                 {
                     toggleSidebar && (
-                        <div className='z-50 h-[100%] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-hidden shadow-md '>
+                        <div className=' z-50 h-[100%] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-hidden shadow-md '>
                             <div className='my-4 relative flex flex-col justify-between items-center gap-4 w-full h-full  sidebar'>
                                 <div className='absolute right-0 -top-2 bottom-0 text-end p-4'>
 

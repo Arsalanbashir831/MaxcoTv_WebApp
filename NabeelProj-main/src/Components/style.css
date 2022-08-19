@@ -137,7 +137,9 @@
    }
   .price_main_div{
    overflow: hidden;
-   width: 100vw;
+   width: 98vw;
+  }.service-container{
+    width: 98vw;
   }
   /* .priceBox{
  

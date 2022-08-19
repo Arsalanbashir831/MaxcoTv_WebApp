@@ -64,7 +64,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
         setData(Data)
     }, [])
     return (
-        <div className='my-16'>
+        <div className='my-16 '>
             <div className=' p-6 flex flex-wrap  items-center justify-center  mx-auto w-[85vw] lg:max-w-[1400px]'>
                 <div className='max-w-[500px]  flex-col gap-8 flex lg:items-start md:items-center items-start justify-around flex-wrap'>
                     <div className='flex items-center justify-center'>
@@ -74,7 +74,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                         <p className='text-start text-white font-normal text-lg'>Earn Easy Money by Selling A Super-Fast, Super-Secure, And The Most Reliable IPTV Service.</p>
                     </div>
 
-                    <div className='flex items-center justify-center flex-col bg-green-400 p-4 rounded-md shadow-sm w-[250px] h-[50px]'>
+                    <div className='transition-all duration-300 ease-in-out flex items-center justify-center flex-col bg-green-400 p-4 rounded-md shadow-sm w-[250px] h-[50px]'>
                         <button type='button' className=''>
                             <h1 className='text-white text-lg relative top-2 font-bold'>BECOME A RESELLER</h1>
                             <span style={{fontSize:"10px",color:"grey"}}>instant access</span>
@@ -82,14 +82,14 @@ const Reseller = ({ darkMode, setDarkMode }) => {
 
                     </div>
                 </div>
-                <div className='my-6 md:block hidden'>
+                <div  className='my-6 md:block hidden '>
                     {
                         darkMode ? (<img src={Bitcoin} alt="" />) : (<img src={BitcoinLight} alt="" />)
                     }
 
                 </div>
             </div>
-            <div className='service-container dark:bg-blue-darkmd bg-white w-[85vw]  lg:max-w-[1400px] flex flex-col items-center justify-center  py-8 mx-auto shadow-sm rounded-md '>
+            <div className='transition-all duration-300 ease-in-out service-container dark:bg-blue-darkmd bg-white w-[85vw]  lg:max-w-[1400px] flex flex-col items-center justify-center  py-8 mx-auto shadow-sm rounded-md '>
 
                 <div className='flex flex-col items-center justify-center gap-3'>
                     <h1 className='text-center  dark:text-white text-blue-darkmd font-bold text-3xl'>Why should You Select Out IPTV Reseller Prgoram?</h1>
@@ -104,7 +104,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                     }
                 </div>
             </div>
-            <div className='md:w-[85vw] w-[90vw] lg:max-w-[1400px] mx-auto my-20 py-8 px-4 dark:bg-blue-darkmd bg-white flex items-center flex-col justify-between gap-8 shadow-sm rounded-md price_main_div'>
+            <div className='transition-all duration-300 ease-in-out md:w-[85vw] w-[90vw] lg:max-w-[1400px] mx-auto my-20 py-8 px-4 dark:bg-blue-darkmd bg-white flex items-center flex-col justify-between gap-8 shadow-sm rounded-md price_main_div'>
                 <div className='flex flex-col items-center justify-center gap-4'>
                     <h1 className='dark:text-white text-blue-lightmd font-bold text-3xl'>Pay-As-You-Go pricing</h1>
                     <p className='dark:text-white text-blue-lightmd font-light md:px-32 px-4 text-justify '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim praesentium velit nam dicta ullam. Vitae dignissimos delectus illum sint laboriosam totam! Delectus, exercitationem assumenda voluptas culpa ut aperiam nobis?</p>
@@ -114,7 +114,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
  #ffd000fc orange */}
 
  {/* desktop view */}
-                <div className='sm:w-[100%]  gap-6 md:my-8 grid lg:grid-cols-4 md:grid-cols-2 price_div'>
+                <div className='transition-all duration-300 ease-in-out sm:w-[100%]  gap-6 md:my-8 grid lg:grid-cols-4 md:grid-cols-2 price_div'>
                     <div className=' lg:block text-center  md:flex justify-center items-center md:flex-col '>
                         <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
                         <ArrowDropDownIcon className='transition-none'></ArrowDropDownIcon>
@@ -140,7 +140,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
 
 {/* Mobile view  */}
 
-<div className='sm:w-[100%]  gap-6 md:my-8 grid lg:hidden md:hidden price_div_mob'>
+<div className='sm:w-[100%]  gap-6 md:my-8 grid lg:hidden md:hidden price_div_mob transition-all duration-300 ease-in-out'>
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
                         <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
@@ -182,7 +182,7 @@ const Reseller = ({ darkMode, setDarkMode }) => {
                     <TimeTag month='6' credit ='15' type="Month" />
                     <TimeTag month='1' credit='20' type="Year"/>
                 </div>
-                <div className='flex items-center sm:w-[100%] md:max-w-[500px] justify-center flex-col bg-green-400 p-4 rounded-md shadow-sm'>
+                <div className='transition-all duration-300 ease-in-out flex items-center sm:w-[100%] md:max-w-[500px] justify-center flex-col bg-green-400 p-4 rounded-md shadow-sm'>
                     <button type='button'>
                         <h1 className='text-white text-2xl font-normal subscribe_text'>Subscribe-to-pay as you go</h1>
                     </button>

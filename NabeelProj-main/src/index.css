@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
-    
+   
+
 }
 
 body{
@@ -16,11 +16,13 @@ body{
     background-position: center;
     background-size: cover; 
     background-size:100%;
+ 
     
 }
 
 html {
     overflow-x: hidden;
+   
 }
 
 .ds {
@@ -29,7 +31,7 @@ html {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-
+   
     /* background-color: #1f3c91; */
 }
 
