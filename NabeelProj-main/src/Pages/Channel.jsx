@@ -390,7 +390,7 @@ const Channel = ({ darkMode, setDarkMode }) => {
 
                                 return (<>
                                     <div className=' h-[2.5rem] rounded-md shadow-md  px-4 py-0.5 dark:bg-[#262F4A] dark:text-white  bg-[#E2E4E8] text-black text-lg overflow-hidden lg:font-semibold' >
-                                        <h1 key={index} className="w-[100vw]" >{list.toUpperCase()}</h1>
+                                        <h1 key={index} className="w-[100vw]" >{list.toUpperCase().slice(0,20)}</h1>
                                     </div>
                                 </>)
 
