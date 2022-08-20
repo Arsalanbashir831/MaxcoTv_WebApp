@@ -13,7 +13,7 @@ const CustomCard1 = ({ mainHeading, subHeading, subPara, buttonHeading, image,ic
                 <div className='  cardButton'>
                 <button type='button' className='flex gap-2 items-center justify-center p-4 my-4 rounded-sm shadow-sm bg-gradient-to-r from-cyan-500 to-blue-500 '>
                  <span>{icon}</span> 
-                    <h1 className='font-bold text-lg text-white'>{buttonHeading}</h1>
+                    <h1 className='font-bold text-lg text-white  customCardButtonText'>{buttonHeading}</h1>
                     <AiOutlineArrowRight fontSize={20} color={'white'} />
                 </button>
                 </div>

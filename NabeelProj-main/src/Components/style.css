@@ -11,7 +11,7 @@
         width: 30%;
     }
     .setupBtn{
-        width: 100%;
+        width: 11rem;
     }
 }
 @media only screen and (max-width:1080px) {
@@ -85,7 +85,7 @@
     }.cardPara{
         width: 90%;
     }.guranteeCard{
-        width: 99%;
+        width: 90%;
         text-align: left;
         justify-content: center;
         align-items: center;
@@ -120,7 +120,12 @@
         width: 10rem;
     }.sliderCard{
         width: 90vw;
-    }
+    }.bottom-setup-div{
+        min-width: 92vw;
+        margin-left: -20px;
+      }.customCardButtonText{
+        font-size: 1rem;
+      }
 }
 
 @media only screen and (max-width:440px){
@@ -140,16 +145,16 @@
 @media only screen and (max-width:395px){
   
    .service_div{
-    width: 100%;
+    /* width: 100%; */
    }
   .price_main_div{
    overflow: hidden;
-   width: 98vw;
+   /* width: 98vw; */
   }.service-container{
-    width: 98vw;
+    /* width: 98vw; */
   }
   .bottom-setup-div{
-    min-width: 95vw;
+    min-width: 93vw;
     margin-left: -20px;
   }
   /* .priceBox{
