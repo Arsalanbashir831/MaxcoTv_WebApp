@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom'
 import Setup from './Setup'
 import Tutorial from './Tutorial'
 import MenuIcon from '@mui/icons-material/Menu';
+import Main from './Main'
 
 const Home = ({ darkMode, setDarkMode }) => {
     const [toggleSidebar, setToggleSidebar] = useState(false)
@@ -106,6 +107,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Route path='/reseller' element={<Reseller darkMode={darkMode} setDarkMode={setDarkMode} />} />
                     <Route path='/setup' element={<Setup darkMode={darkMode} setDarkMode={setDarkMode} />} />
                     <Route path='/tutorial' element={<Tutorial />} />
+                    <Route path='/main' element={<Main />}/>
                 </Routes>
 
                 <div className='w-full dark:bg-blue-darkmd text-white  bg-blue-lightmd p-4 mt-12'>

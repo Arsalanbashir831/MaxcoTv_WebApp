@@ -7,6 +7,8 @@ import moon from '../assets/moon.svg'
 import sun from '../assets/sun.svg'
 import { Link } from 'react-router-dom'
 
+
+
 const Navbar = ({ darkMode, setDarkMode }) => {
     const [Scrolled, setScrolled] = useState(false)
 
@@ -25,7 +27,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className={`transition-all duration-300 ease-in-out  w-full px-8 py-4  flex items-center justify-around  shadow-lg  ${Scrolled ? 'bg-blue-lightmd' : ''} ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
             <div className='w-[80%] flex items-center justify-between'>
                 <div className='flex justify-center items-center'>
-                    <Link to='/'>
+                    <Link to='/Main'>
                     {/* className='max-h-[50px] max-w-[80px]'  */}
                         <img className='relative top-[-6px] max-h-[6rem] lg:h-[5rem]  nav-logo max-w-[300px]'  src={Logo} alt="Logo-image" />
                     </Link>
