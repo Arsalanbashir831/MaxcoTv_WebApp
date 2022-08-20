@@ -113,6 +113,8 @@
         font-size: 1rem; 
     }.MCast-icon{
         width: 10rem;
+    }.sliderCard{
+        width: 90vw;
     }
 }
 
@@ -130,7 +132,7 @@
 }
 
 
-@media only screen and (max-width:391px){
+@media only screen and (max-width:395px){
   
    .service_div{
     width: 100%;

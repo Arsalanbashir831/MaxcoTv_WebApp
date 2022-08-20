@@ -259,7 +259,7 @@ const HomeBody = ({ darkMode, setDarkMode }) => {
                         })
                     }
                 </Carousel> */}
-                <Carousel  animation="slide" navButtonsAlwaysVisible="true" autoPlay="false" navButtonsAlwaysInvisible="true"   >
+                <Carousel  animation="slide" navButtonsAlwaysVisible="true" autoPlay="true" interval={3500} navButtonsAlwaysInvisible="true"   >
                     {
                         customSmallCaardData.map((item, index) => {
 

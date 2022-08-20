@@ -37,7 +37,7 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                 </div>
                 {/* Mobile version Navbar expandable */}
-                <div className={`  z-20 lg:hidden mx-auto    flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd' : ''}`}>
+                <div className={` transition-all duration-300 ease-in-out z-20 lg:hidden mx-auto    flex justify-between items-center px-4 py-4 w-full fixed top-0 ${Scrolled ? 'bg-blue-lightmd  transition-all duration-300' : ''}  ${Scrolled ? 'dark:bg-blue-darkmd  transition-all duration-300' : ''}`}>
                     <img className='max-w-[100px] max-h-[100px]' src={Logo} alt="Logo" />
                     <div className='rounded-full flex items-center justify-center w-8 h-8 bg-white '>
                         {/* <div className='p-4'>
@@ -55,13 +55,13 @@ const Home = ({ darkMode, setDarkMode }) => {
                 {/* Mobile version sidebar*/}
                 {
                     toggleSidebar && (
-                        <div className=' z-50 h-[100%] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-4/5 f-full text-gray-50 overflow-hidden shadow-md '>
+                        <div className='  z-50 h-[100%] animate-slide-in lg:hidden fixed gap-4 dark:bg-blue-darkmd bg-blue-lightmd right-0 transition-all duration-300 ease-in-out top-0 w-[65%] f-full text-gray-50 overflow-hidden shadow-md '>
                             <div className='my-4 relative flex flex-col justify-between items-center gap-4 w-full h-full  sidebar'>
                                 <div className='absolute right-0 -top-2 bottom-0 text-end p-4'>
 
                                     <AiOutlineClose  onClick={() => setToggleSidebar(!toggleSidebar)} color='white' fontSize={25} />
                                 </div>
-                                <Link to='/'><img className='h-[6rem] ' src={Logo} alt=""/></Link>
+                                <Link to='/'><img className='h-[4rem] ' src={Logo} alt=""/></Link>
 
                                 <div className='flex py-4 border-b border-gray-50  gap-8 flex-col justify-start items-start font-extrabold font-2xl w-4/5 '>
                                     <Link to='/'><h1 >HOME</h1></Link>
