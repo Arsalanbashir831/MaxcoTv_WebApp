@@ -5,15 +5,16 @@ import Logo from '../assets/mainLogo.png'
 import WebIcon from '@mui/icons-material/Web';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import { Link } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
     let navigate = useNavigate(); 
+
     const routeChange = (path) =>{ 
-   
       navigate(path);
     }
+   
   return (
     <div>
        <section class="main-section">
@@ -29,22 +30,28 @@ const Main = () => {
 
            
             <div  class="boxes">
-           
-                <div onClick={()=>routeChange("#")}  class="box ">
+          <a style={{display:'contents'}} href="http://google.com">
+                <div  class="box ">
                     <WebIcon style={{width:"50%"}}></WebIcon>
                <h6 class="box-text ">Website</h6>
                 </div>
-              
-                <div onClick={()=>routeChange("#")} class="box ">
+                </a>
+
+                <a style={{display:'contents'}} href="http://google.com">
+                <div  class="box ">
                 <PeopleAltIcon style={{width:"50%"}}></PeopleAltIcon>
                    
                     <h6  class="box-text ">Members Area</h6>
                 </div>
-                <div onClick={()=>routeChange("#")} class="box ">
+                </a>
+
+                <a style={{display:'contents'}} href="http://google.com">
+                <div  class="box ">
                <ShoppingCartCheckoutIcon style={{width:"50%"}} ></ShoppingCartCheckoutIcon>
                    
                     <h6 class="box-text ">Checkout</h6>
                 </div>
+                </a>
             </div>
         </div>
     </section>
