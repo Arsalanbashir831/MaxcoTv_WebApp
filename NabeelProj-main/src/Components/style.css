@@ -35,6 +35,8 @@
 
     .image {
         width: 100%;
+    }.guranteeCard{
+        width: 90%;
     }
 }
 @media only screen and (max-width:768px){
@@ -128,7 +130,7 @@
       }
 }
 
-@media only screen and (max-width:440px){
+@media only screen and (max-width:450px){
 
     .price_div{
         display: none;
@@ -138,6 +140,8 @@
    
     .lower_pricetage_type{
         display: block;
+    }.guranteeCard{
+        width: 95%;
     }
 }
 
