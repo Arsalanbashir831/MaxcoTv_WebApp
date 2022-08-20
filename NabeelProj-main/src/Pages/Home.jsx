@@ -62,7 +62,7 @@ const Home = ({ darkMode, setDarkMode }) => {
 
                                     <AiOutlineClose  onClick={() => setToggleSidebar(!toggleSidebar)} color='white' fontSize={25} />
                                 </div>
-                                <Link to='/'><img className='h-[4rem] ' src={Logo} alt=""/></Link>
+                                <Link to='/Main'><img className='h-[4rem] ' src={Logo} alt=""/></Link>
 
                                 <div className='flex py-4 border-b border-gray-50  gap-8 flex-col justify-start items-start font-extrabold font-2xl w-4/5 '>
                                     <Link to='/'><h1 >HOME</h1></Link>

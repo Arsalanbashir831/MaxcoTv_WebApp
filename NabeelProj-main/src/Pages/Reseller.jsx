@@ -143,27 +143,27 @@ const Reseller = ({ darkMode, setDarkMode }) => {
 <div className='sm:w-[100%]  gap-6 md:my-8 grid lg:hidden md:hidden price_div_mob transition-all duration-300 ease-in-out'>
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='100' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-6rem] ' ></KeyboardArrowRightIcon>
                         <PriceTag price='20' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                  
                     
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='300' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-6rem] ' ></KeyboardArrowRightIcon>
                         <PriceTag price='100' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                   
                    
                     <div className='  text-center  flex justify-center items-center md:flex-row '>
                         <PriceTag price='500' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[-2rem] ' ></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-6rem] ' ></KeyboardArrowRightIcon>
                         <PriceTag price='300' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                   
                     <div className='  text-center flex justify-center items-center md:flex-row '>
                         <PriceTag price='1000' type="Top-Up Amount" unit="£" color="#00b40efc "  />
-                        <KeyboardArrowRightIcon className='mt-[-2rem]'></KeyboardArrowRightIcon>
+                        <KeyboardArrowRightIcon className='mt-[-6rem]'></KeyboardArrowRightIcon>
                         <PriceTag price='700' type="Credits" unit=" " color=" #ffd000fc" />
                     </div>
                   
