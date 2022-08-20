@@ -6,7 +6,7 @@ const CustomCard3 = ({ mainHeading, subHeading, subPara,  image }) => {
         <div className='flex flex-row items-start w-[90vw]  lg:w-[940px] justify-center gap-4 bg-white  dark:bg-blue-darkmd py-10 px-6 flex-wrap rounded-md shadow-sm'>
             <div className='order-2 w-full md:max-w-[300px]  flex flex-col items-start justify-start gap-4'>
                 <h1 className='text-blue-700  text-5xl font-semibold customCardMainHead'>{mainHeading}</h1>
-                <h1 className='dark:text-white text-blue-lightmdbg text-4xl font-bold'>{subHeading}</h1>
+                <h1 className='dark:text-white text-blue-lightmdbg text-3xl font-bold'>{subHeading}</h1>
                 <p className=' text-justify w-full   dark:text-white text-blue-lightmdbg font-lg font-normal  cardPara'>
                     {subPara}
                 </p>

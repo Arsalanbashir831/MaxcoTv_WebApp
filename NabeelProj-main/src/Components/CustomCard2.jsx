@@ -9,7 +9,7 @@ const CustomCard2 = ({ mainHeading, subHeading, subPara, buttonHeading, image })
             </div>
             <div className='flex flex-col md:max-w-[300px] items-start justify-start gap-4 w-full'>
                 <h1 className='text-blue-700 text-5xl font-semibold customCardMainHead'>{mainHeading}</h1>
-                <h1 className='dark:text-white text-blue-lightmdbg text-4xl font-bold'>{subHeading}</h1>
+                <h1 className='dark:text-white text-blue-lightmdbg text-3xl font-bold'>{subHeading}</h1>
                 <p className='text-justify w-full dark:text-white  text-blue-lightmdbg  font-lg font-normal cardPara'>
                     {subPara}
                 </p>
