@@ -11,6 +11,7 @@ import BoxSetup from '../Components/BoxSetup'
 import CastingSetup from '../Components/CastingSetup'
 import Slide from 'react-reveal/Slide';
 import { ButtonBase } from '@mui/material';
+import Web from '@mui/icons-material/Web'
 
 
 
@@ -29,7 +30,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
     const BoxRef = useRef(null);
     const CastingRef = useRef(null);
 
-
+const element = document.getElementById('setupDiv');
 
     return (
         
@@ -48,9 +49,11 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                 <div   onClick={(e) => {
 
                                     WebRef.current?.scrollIntoView({ behavior: 'smooth' });
+                                 element.scrollIntoView({ behavior: 'smooth' })
                                     setCurrent('Web');
                                     setPrevIndex(index);
                                     setIndex(0);
+                             
                                     
 
                                 }} className={` ${current == 'Web' ? Activebtn : notActiveBtn} setupBtn  `}>
@@ -73,6 +76,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                     setPrevIndex(index);
                                     setCurrent('Mobile');
                                     setIndex(1);
+                                    element.scrollIntoView({ behavior: 'smooth' })
                                 }} className={` ${current == 'Mobile' ? Activebtn : notActiveBtn}  setupBtn`}>
 
                                     <button className='iconBtn'>
@@ -91,6 +95,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                     setPrevIndex(index);
                                     setIndex(2);
                                     TvRef.current?.scrollIntoView({ behavior: 'smooth' });
+                                    element.scrollIntoView({ behavior: 'smooth' })
 
                                 }} className={` ${current == 'TV' ? Activebtn : notActiveBtn} setupBtn`}>
                                     <button className='iconBtn'>
@@ -110,6 +115,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                     setPrevIndex(index);
                                     setIndex(3);
                                     BoxRef.current?.scrollIntoView({ behavior: 'smooth' });
+                                    element.scrollIntoView({ behavior: 'smooth' })
 
                                 }} className={` ${current == 'Box & Stick' ? Activebtn : notActiveBtn}   setupBtn`}>
                                     <button className='iconBtn'>
@@ -129,10 +135,11 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                     setPrevIndex(index);
                                     setIndex(4);
                                     CastingRef.current?.scrollIntoView({ behavior: 'smooth' });
+                                    element.scrollIntoView({ behavior: 'smooth' })
 
                                 }} className={` ${current == 'Casting' ? Activebtn : notActiveBtn} setupBtn`}>
                                     <button className='iconBtn'>
-                                        <h1><MdCastConnected fontSize={90} /></h1>
+                                        <h1><MdCastConnected className='lg:h-[94px] lg:w-[120px] md:h-[94px] md:w-[120px] boxIcon' fontSize={90} /></h1>
                                         <h1 className='font-bold text-xl btntext'>Casting</h1>
                                     </button>
 
@@ -147,7 +154,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
             
             
        
-            <div className='mt-6 max-w-full md:w-[90%]  lg:max-w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8 bottom-setup-div'>
+            <div id='setupDiv' className='mt-6 max-w-full md:w-[90%]  lg:max-w-[1100px] dark:bg-blue-darkmd bg-white dark:text-white transition-all duration-300 ease-in-out text-blue-lightmd rounded-lg shadow-lg mx-auto flex items-center justify-center p-8 bottom-setup-div'>
                 {current === 'Web' && (prevIndex >= index)? <Slide duration= {700} enter = 'false' left> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
                 {current === 'Web' && (prevIndex < index)? <Slide duration= {700} enter = 'false' right> <div ref={WebRef}><WebSetup /></div> </Slide > : ''}
 
