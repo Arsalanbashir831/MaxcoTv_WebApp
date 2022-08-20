@@ -4,6 +4,7 @@
 :root{
     --bg-color:linear-gradient(to right, #8e2de2, #4a00e0);
     --text-color:white;
+    --box-bg-color:rgb(4 14 46);
 }
 
 
@@ -38,7 +39,7 @@ p{
     /* border: 1px solid white; */
     width: 30%;
     height: 100%;
-    background-color: rgba(14, 14, 14, 0.628);
+    background-color: var(--box-bg-color);
     border-radius: 10px;
     transition: all 0.2s ease-in;
     cursor: pointer;

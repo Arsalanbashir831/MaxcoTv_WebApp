@@ -57,7 +57,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
 
 
                                     <button className='iconBtn ' >
-                                        <TbWorld fontSize={90} />
+                                        <TbWorld className='lg:h-[94px] lg:w-[120px] md:h-[94px] md:w-[120px] boxIcon'  fontSize={90} />
                                         <h1 className='font-bold text-xl btntext'>Web</h1>
                                     </button>
 
@@ -76,7 +76,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
                                 }} className={` ${current == 'Mobile' ? Activebtn : notActiveBtn}  setupBtn`}>
 
                                     <button className='iconBtn'>
-                                        <FaMobile fontSize={90} />
+                                        <FaMobile className='lg:h-[94px] lg:w-[120px] md:h-[94px] md:w-[120px] boxIcon'  fontSize={90} />
                                         <h1 className='font-bold text-xl btntext'>Mobile</h1>
                                     </button>
 
@@ -94,7 +94,7 @@ const Setup = ({ darkMode, setDarkMode }) => {
 
                                 }} className={` ${current == 'TV' ? Activebtn : notActiveBtn} setupBtn`}>
                                     <button className='iconBtn'>
-                                        <FiMonitor fontSize={90} />
+                                        <FiMonitor className='lg:h-[94px] lg:w-[120px] md:h-[94px] md:w-[120px] boxIcon'  fontSize={90} />
                                         <h1 className='font-bold text-lg btntext'>TV</h1>
                                     </button>
 
