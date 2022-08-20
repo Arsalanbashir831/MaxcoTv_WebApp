@@ -40,7 +40,6 @@ const Main = () => {
                 <a style={{display:'contents'}} href="http://google.com">
                 <div  class="box ">
                 <PeopleAltIcon style={{width:"50%"}}></PeopleAltIcon>
-                   
                     <h6  class="box-text ">Members Area</h6>
                 </div>
                 </a>
