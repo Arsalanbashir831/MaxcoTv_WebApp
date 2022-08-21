@@ -20,8 +20,8 @@ const Setup = ({ darkMode, setDarkMode }) => {
     const [current, setCurrent] = useState('Web');
     const [index, setIndex] = useState(0);
     const [prevIndex, setPrevIndex] = useState(1);
-    const notActiveBtn = '  transition-all duration-300 ease-in-out dark:hover:bg-white hover:bg-[#040e2e] hover:text-white dark:hover:text-blue-lightmd md:w-[150px] w-full md:p-6 p-4 dark:text-white text-blue-lightmd  rounded-md dark:bg-[#040e2e] bg-white shadow-sm flex flex-col items-center justify-center gap-4'
-    const Activebtn = ' transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-[150px] w-full md:p-6 p-4 rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-[#040e2e] text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4'
+    const notActiveBtn = '  transition-all duration-300 ease-in-out dark:hover:bg-white hover:bg-[#040e2e] hover:text-white dark:hover:text-blue-lightmd md:w-[150px] w-full md:p-6 p-4 dark:text-white text-blue-lightmd  rounded-md dark:bg-[#040e2e] bg-white shadow-sm flex flex-col items-center justify-center gap-4 hover:bg-[#152B7A]'
+    const Activebtn = ' transition-all duration-300 ease-in-out dark:hover:bg-white dark:hover:text-blue-lightmd md:w-[150px] w-full md:p-6 p-4 rounded-md dark:text-white text-blue-lightmd dark:bg-white dark:text-blue-darkmdbg bg-[#040e2e] text-slate-100 shadow-sm flex flex-col items-center justify-center gap-4 bg-[#152B7A]'
 
     //references
     const WebRef = useRef(null);
